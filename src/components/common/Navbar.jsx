@@ -21,14 +21,15 @@ export default function Navbar() {
         <div className="flex space-x-8">
           <span>+91 986-544-3399 |</span>
           <span>Shadimuharath@Gmail.com</span>
-        </div>        
+               
 
         {/* Right Side - Social Media Icons */}
         <div className="flex space-x-3 ">
-          <a href="#" className="text-white hover:text-pink-300"><FaFacebookF /></a>
+          <a href="#" className="text-white h-[18px] hover:text-pink-300"><FaFacebookF /></a>
           <a href="#" className="text-white hover:text-pink-300"><FaInstagram /></a>
           <a href="#" className="text-white hover:text-pink-300"><FaLinkedin /></a>
           <a href="#" className="text-white hover:text-pink-300"><FaYoutube /></a>
+        </div>
         </div>
       </div>
 
