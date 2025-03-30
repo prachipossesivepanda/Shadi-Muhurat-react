@@ -7,9 +7,9 @@ import "./App.css";
 function App() {
   return (
   <div>
-    
+    <Router>
       <Landing /> {/* Navbar is always visible */}
-      
+      </Router>
       </div>
   );
 }
