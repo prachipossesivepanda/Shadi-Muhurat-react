@@ -9,7 +9,7 @@ export default function Navbar(){
     <div className="bg-white mt-12 h-[115px] w-full">
 
       <div className="bg-red-500 h-[38px]">
-        
+        <h1>Kishan PC Me running</h1>
   
       </div>
 
