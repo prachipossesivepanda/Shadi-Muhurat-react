@@ -1,7 +1,7 @@
 import React from "react";
-import ShadiMuharatSVG from "../../assets/images/Shadi Muharath.svg"; // Import as an image
-import ExperienceSVG from "../../assets/images/Experience.svg"; // Import as an image
-import bgVideo from "../../assets/images/video.mp4"; // Import the video correctly
+import ShadiMuharatSVG from "../../assets/images/Shadi Muharath.svg"; 
+import ExperienceSVG from "../../assets/images/Experience.svg"; 
+import bgVideo from "../../assets/images/video.mp4"; 
 
 const HeroSection = () => {
   return (
@@ -15,33 +15,32 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
 
       {/* Content */}
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white text-center px-6">
-        {/* Display as Images */}
-        <img src={ShadiMuharatSVG} alt="Shadi Muharat" className="w-3/4 md:w-1/2" />
-        <img src={ExperienceSVG} alt="Experience" className="w-1/2 md:w-1/3 mt-4 mb-6" />
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white text-center px-4 sm:px-6">
+        
+        {/* Responsive Images */}
+        <img src={ShadiMuharatSVG} alt="Shadi Muharat" className="w-3/4 max-w-xs sm:max-w-md" />
+        <img src={ExperienceSVG} alt="Experience" className="w-2/4 max-w-xs sm:max-w-sm mt-4 mb-6" />
 
         {/* Search Bar & Login Button */}
-        <div className="flex items-center space-x-4">
-  {/* Search Bar */}
-  <div 
-    className="flex items-center bg-white p-2 rounded-full shadow-lg"
-    style={{ width: "369px", height: "42px", borderRadius: "500px" }}
-  >
-    <input
-      type="text"
-      placeholder="Search here..."
-      className="px-4 py-2 outline-none text-gray-700 bg-transparent flex-1"
-    />
-  </div>
+        <div className="flex flex-col sm:flex-row items-center space-y-6 sm:space-y-0 sm:space-x-4 w-full max-w-lg">
+          
+          {/* Search Bar */}
+          <div className="flex flex-row items-center bg-white p-4 px-6 rounded-full shadow-lg w-full max-w-[29vw] h-[2.18vw] sm:w-auto">
+            <input
+              type="text"
+              placeholder="Search here..."
+              className="px-6  py-8 outline-none rounded-full text-gray-700 bg-transparent flex-center w-full"
+            />
+          </div>
 
-  {/* Login Button - Now Properly Positioned */}
-  <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-1 w-[124px] h-[42px] rounded-full">
-    Login
-  </button>
-</div>
-</div>
-</div>
+          {/* Login Button */}
+          <button className="bg-red-500 hover:bg-red-400 text-white px-4 py-2 rounded-full w-full sm:w-[124px]">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default HeroSection;
