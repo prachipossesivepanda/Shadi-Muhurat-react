@@ -3,6 +3,12 @@ import Navbar from "../components/common/Navbar";
 import HeroSection from "../components/Home/HeroSection";
 import Registerform from "../components/Home/Registerform";
 import Profile from "../components/Home/Profile";
+import Service from "../components/Home/Service";
+import Stats from "../components/Home/Stats";
+import Together from "../components/Home/Together";
+import Wedding from "../components/Home/Wedding";
+//import ErrorBoundary from "../components/Home/ErrorBoundary";
+
 
 
 export default function Landing(){
@@ -11,7 +17,12 @@ export default function Landing(){
     <Navbar/>
     <HeroSection/>
     <Registerform/>
+    <Profile/>
+    <Service/>
+    <Stats/>
     
+    <Together/>
+    <Wedding/>
     </div>
   )
   }

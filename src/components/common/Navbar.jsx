@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaLinkedin, FaInstagram, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
+import { FaFacebook , FaLinkedin, FaInstagram, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
 //import Logo from "../../assets/images/Shadi.svg";
 //import Muharat from "../../assets/images/Muharath.svg";
 import Logo from "../../assets/images/Logo.svg";
@@ -29,7 +29,7 @@ export default function Navbar() {
 
         {/* Right Side - Social Media Icons */}
         <div className="flex space-x-2 sm:space-x-3">
-          <a href="#" className="hover:text-pink-300"><FaFacebookF /></a>
+          <a href="#" className="hover:text-pink-300"><FaFacebook /></a>
           <a href="#" className="hover:text-pink-300"><FaInstagram /></a>
           <a href="#" className="hover:text-pink-300"><FaLinkedin /></a>
           <a href="#" className="hover:text-pink-300"><FaYoutube /></a>

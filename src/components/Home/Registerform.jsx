@@ -6,7 +6,7 @@ export default function RegisterSection() {
       {/* Left Section - Intro */}
       <div className="w-full md:w-1/2 text-center md:text-left">
         <img src={Logo} alt="ShadiMuhrat Logo" className="h-12 mx-auto md:mx-0" />
-        <p className="mt-4 text-gray-400 px-4 md:px-0">
+        <p className="mt-4 text-[#000000B2 70%] px-4 md:px-0">
           Join ShadiMuhrat today and take the first step toward a beautiful life ahead. 
           With easy-to-use features, advanced search options, and a dedicated support team, 
           we are here to guide you every step of the way. Let's create a timeless bond for a 
@@ -14,17 +14,12 @@ export default function RegisterSection() {
         </p>
 
         {/* Mother Tongue Button */}
-        <button className="absolute w-[19.15vw] h-[6.11vh] top-[58.65vh] left-[23.07vw] 
-                   rounded-[3.12vw] px-[1.04vw] py-[1.39vh] gap-[0.52vw] 
-                   bg-[#d6a18d] text-[#C1645C] font-inter font-semibold 
-                   text-[1.3vw] flex items-center justify-center shadow-md">
-          Mother Tongue
-        </button>
+        
       </div>
 
       {/* Right Section - Register Form */}
       <div className="w-[29vw] h-[50.115vh] md:w-1/2 mt-8 md:mt-0 flex justify-center">
-        <div className="bg-[#E3CBBE] p-6 rounded-4xl shadow-2xl w-full -mt-27 z-10 max-w-sm">
+        <div className="bg-[#E3CBBE] p-6 rounded-4xl shadow-2xl mb-[0.058vw] w-[25vw] h-[35vw] -mt-29 z-10 max-w-sm">
           <h3 className="text-2xl font-semibold text-center text-[#C1645C]">Register Now</h3>
           <p className="text-center text-[#C1645C] text-sm mb-4">
             Join ShadiMuhrat today and take the first step toward a beautiful life ahead.
@@ -52,7 +47,7 @@ export default function RegisterSection() {
             {/* Register Button */}
             <button 
               type="submit" 
-              className="w-full bg-red-500 text-white py-2 rounded-full text-lg font-semibold hover:bg-red-600"
+              className="w-full mb-[1.25vwc:\Users\PRACHI\Downloads\Frame 134552.png] bg-red-500 text-white py-2 rounded-full text-lg font-semibold hover:bg-red-600"
             >
               Register For Free
             </button>

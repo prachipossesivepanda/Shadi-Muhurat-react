@@ -2,96 +2,38 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div className="max-w-6xl mx-auto p-6 font-sans">
-      {/* Mother Tongue Section */}
-      <div className="mb-8">
+    <div className="bg-[#FAF3EC] py-10 px-4 md:px-16">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-gray-500 text-sm uppercase">BROWSE</h2>
+        <h1 className="text-2xl md:text-3xl font-semibold mt-2">
+          <span className="text-red-600">Matrimonial</span> Profiles by
+        </h1>
 
-        <div className="flex flex-wrap gap-2 text-gray-800">
-          {[
-            "Bihari", "Bengali", "Hindi Delhi", "Hindi", 
-            "Gujarati", "Kamada", "Malayalam", "Marathi",
-            "Oriya", "Punjabi", "Rajasthani", "Tamil", "Telugu",
-            "Hindi UP", "Hindi MP", "Konkani", "Himachali",
-            "Haryanvi", "Assamese", "Kashmiri", "Sikkim Nepali", "Tulu"
-          ].map((tongue, index) => (
-            <span key={index} className="inline-block">
-              {tongue}
-              {index < 21 && <span className="mx-2">|</span>}
+        {/* Categories */}
+        <div className="mt-2 flex flex-wrap  pl-[1.042vw] justify-center gap-6 text-gray-600 text-lg">
+          <span className="bg-[#E3CBBE] px-4 py-2 rounded-full text-[#C1645C]">
+            Mother Tongue
+          </span>
+          {["Caste", "Religion", "City", "Occupation", "State", "NRI", "College"].map((category, index) => (
+            <span key={index} className="cursor-pointer text-[#8997A0] hover:text-red-500">
+              {category}
             </span>
           ))}
         </div>
-      </div>
 
-      {/* Browse Section */}
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800">BROWSE</h2>
-        <h1 className="text-3xl font-bold text-gray-800">Matrimonial Profiles by</h1>
-      </div>
-
-      {/* Table Section */}
-      <div className="overflow-x-auto">
-        <table className="min-w-full border-collapse">
-          <thead>
-            <tr className="border-b">
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">Mother Tongue</th>
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">Caste</th>
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">Religion</th>
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">City</th>
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">Occupation</th>
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">State</th>
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">NRI</th>
-              <th className="text-left py-3 pr-6 font-medium text-gray-700">College</th>
-            </tr>
-          </thead>
-          <tbody>
-            {/* First Row */}
-            <tr className="border-b">
-              <td className="py-3 pr-6">
-                <div className="flex flex-wrap gap-x-2 items-center">
-                  {["Bihari", "Bengali", "Hindi Delhi", "Hindi", "Gujarati", "Kamada", "Malayalam", "Marathi", "Oriya", "Punjabi", "Rajasthani", "Tamil", "Telugu"].map((item, index) => (
-                    <React.Fragment key={index}>
-                      <span className="text-gray-800">{item}</span>
-                      {index < 12 && <span className="text-gray-400">|</span>}
-                    </React.Fragment>
-                  ))}
-                </div>
-              </td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-            </tr>
-            
-            {/* Second Row */}
-            <tr>
-              <td className="py-3 pr-6">
-                <div className="flex flex-wrap gap-x-2 items-center">
-                  {["Hindi UP", "Hindi MP", "Konkani", "Himachali", "Haryanvi", "Assamese", "Kashmiri", "Sikkim Nepali", "Tulu"].map((item, index) => (
-                    <React.Fragment key={index}>
-                      <span className="text-gray-800">{item}</span>
-                      {index < 8 && <span className="text-gray-400">|</span>}
-                    </React.Fragment>
-                  ))}
-                </div>
-              </td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-              <td className="py-3 pr-6 text-gray-500">-</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      {/* Footer */}
-      <div className="mt-4 text-right text-sm text-gray-500">
-        1920-4.15
+        {/* Language List */}
+        <div className="mt-6 text-gray-500 flex flex-wrap justify-center gap-3 text-sm md:text-base">
+          {[
+            "Bihari", "Bengali", "Hindi", "Gujarati", "Kannada", "Malayalam",
+            "Marathi", "Oriya", "Punjabi", "Rajasthani", "Tamil", "Telugu",
+            "Hindi UP", "Hindi MP", "Konkani", "Himachali", "Haraynvi",
+            "Assamese", "Kashmiri", "Sikkim Nepali", "Tulu"
+          ].map((language, index, array) => (
+            <span key={index} className="cursor-pointer text-[#BAB8BA]">
+              {language} {index !== array.length - 1 && <span className="mx-1">|</span>}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
