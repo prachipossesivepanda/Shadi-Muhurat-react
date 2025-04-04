@@ -21,7 +21,7 @@ import Profile from "../../assets/images/Prof.svg";
 
 const Together = () => {
   return (
-    <div className="w-[95vw] h-[60vw]">
+    <div className="w-[95vw] h-[60vw] bg-white">
       <div className="bg-red-600 relative">
         <img
           src={Laal}
@@ -36,7 +36,7 @@ const Together = () => {
             <img 
               src={title}
               alt="shadi"
-              className=" mt-6 ml-6" // Adjust image width and height
+              className=" mt-6 ml-6 inset-0" // Adjust image width and height
             />
           <img
             src={Head}
@@ -69,12 +69,12 @@ const Together = () => {
         </div>
 
         {/* Second Column */}
-        <div className="grid grid-cols-3 gap-4">
-          <div className="bg-white p-4">
+        <div className="grid grid-cols-3 gap-4 ">
+          <div className="bg-[#FFFFFF] ">
             <img
               src={bow}
               alt="Bow"
-              className="w-full h-full object-cover"
+              className="w-full h-full rounded-xl inset-0"
             />
           </div>
           <div className="bg-white p-4">

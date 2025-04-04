@@ -26,17 +26,19 @@ const HeroSection = () => {
           
           {/* Search Bar */}
           <div className="flex flex-row items-center bg-white p-4 px-6 rounded-full shadow-lg w-full max-w-[29vw] h-[2.18vw] sm:w-auto">
+           <form>
             <input
               type="text"
               placeholder="Search here..."
               className="px-6  py-8 outline-none rounded-full text-gray-700 bg-transparent flex-center w-full"
-            />
-          </div>
-
-          {/* Login Button */}
-          <button className="bg-red-500 hover:bg-red-400 text-white px-4 py-2 rounded-full w-full sm:w-[124px]">
+            /> <button className="bg-red-500 hover:bg-red-400 text-white px-4 py-2 rounded-full w-full sm:w-[124px]">
             Login
           </button>
+          </form>
+          </div>
+
+         
+          
         </div>
       </div>
     </div>

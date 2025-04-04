@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Profile = () => {
   return (
     <div className="bg-[#FAF3EC] py-10 px-4 md:px-16">
