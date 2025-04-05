@@ -2,9 +2,9 @@ import React from 'react';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Engagement from '../assets/images/Engagement.svg';
-import Background from '../assets/images/Background.svg'; // ✅ Import Background
+import Background from '../assets/images/Background.svg';
 import Couple1 from '../assets/images/Couple1.svg';
-import Couple2 from '../assets/images/Couple 2.svg'; // ✅ Remove space in filename
+import Couple2 from '../assets/images/Couple 2.svg';
 import Couple3 from '../assets/images/Couple3.svg';
 import Couple4 from '../assets/images/Couple 4.svg';
 import Couple5 from '../assets/images/Couple 5.svg';
@@ -18,13 +18,13 @@ import Couple12 from '../assets/images/Couple 12.svg';
 import Couple13 from '../assets/images/Couple-13.svg';
 import Couple14 from '../assets/images/Couple-14.svg';
 import Couple15 from '../assets/images/Couple 15.svg';
-import Couple16 from '../assets/images/Couple16.svg'; // ✅ Remove space in filename
+import Couple16 from '../assets/images/Couple16.svg';
 
 const Gallery = () => {
   return (
     <div>
       <Navbar />
-      
+
       {/* Hero Section */}
       <div className="relative w-full">
         <img src={Engagement} alt="Engagement" className="w-full" />
@@ -35,40 +35,64 @@ const Gallery = () => {
           <p className="text-lg mt-2 font-poppins leading-6">Now find your life partner easy and fast.</p>
         </div>
       </div>
-      
-      {/* Background Image */}
+
+      {/* Background Section */}
       <div className="bg-[#FCECEC] min-h-screen flex flex-col justify-center items-center p-10 relative">
         <img src={Background} alt="Background" className="absolute inset-0 w-full h-full object-cover opacity-30" />
 
-        {/* Featured Images */}
-        <div className="grid grid-cols-3 gap-4  mt-16 w-full max-w-5xl z-10">
-          
-          {/* Left Image */}
+        {/* Featured Couples */}
+        <div className="grid grid-cols-3 mt-16 w-full max-w-5xl z-10">
           <div className="flex flex-col justify-end items-center self-end">
-            <img src={Couple11} alt="Couple 1" className="w-32 h-32 md:w-40 md:h-40 rounded-t-full object-cover" />
+            <img src={Couple11} alt="Couple Left" className="w-32 h-32 md:w-40 md:h-40 rounded-t-full object-cover" />
           </div>
-
-          {/* Center Image */}
           <div className="flex justify-center relative">
             <div className="w-60 h-50 md:w-72 md:h-96 rounded-t-[50%] overflow-hidden flex justify-center items-center">
-              <img src={Couple3} alt="Wedding Couple" className="w-full h-full object-cover" />
+              <img src={Couple3} alt="Main Couple" className="w-full h-full object-cover" />
             </div>
           </div>
-
-          {/* Right Image */}
           <div className="flex flex-col justify-end self-end">
-            <img src={Couple16} alt="Couple 2" className="w-28 h-28 md:w-36 md:h-36 rounded-t-full object-cover" />
+            <img src={Couple16} alt="Couple Right" className="w-28 h-28 md:w-36 md:h-36 rounded-t-full object-cover" />
           </div>
-
         </div>
-        
-        {/* Wedding Images Grid */}
-        <div className="grid grid-cols-3 gap-6 w-[90vw] mx-auto mt-10 z-10">
-          {[Couple10, Couple9, Couple8, Couple7, Couple5, Couple6, Couple13, Couple1, Couple4, Couple3, Couple14, Couple2].map((image, index) => (
-            <div key={index} className="bg-white shadow-md w-[30vw] h-[42vw] overflow-hidden">
-              <img src={image} alt={`Wedding ${index + 1}`} className="w-full h-full object-cover" />
-            </div>
-          ))}
+
+        {/* Wedding Gallery Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-10 w-full max-w-6xl z-10">
+          <div className="bg-gray-200 border-white row-span-1">
+            <img src={Couple10} className="w-full h-auto object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple9} className="w-full h-auto object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-1">
+            <img src={Couple8} className="w-full h-auto object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple7} className="w-full h-auto object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple5} className="w-[30vw] h-[42vw] object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple6} className="w-[30vw] h-[42vw] object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple13} className="w-full h-auto object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple4} className="w-[30vw] h-[42vw] object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple1} className="w-[30vw] h-[42vw] object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple3} className="w-[30vw] h-[44vw] object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-3">
+            <img src={Couple2} className="w-[30vw] h-[44vw] object-cover " />
+          </div>
+          <div className="bg-gray-200 border-white row-span-1">
+            <img src={Couple14} className="w-full h-auto object-cover " />
+          </div>
         </div>
       </div>
 
