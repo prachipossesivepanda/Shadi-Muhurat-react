@@ -11,6 +11,7 @@ import Wedding from "../components/Home/Wedding";
 import Perfect from "../components/Home/PerfectMatch";
 import Footer from "../components/common/Footer";
 import PerfectMatch from "../components/Home/PerfectMatch";
+import Mobile from "../components/Home/Mobile";
 //import ErrorBoundary from "../components/Home/ErrorBoundary";
 
 
@@ -29,6 +30,7 @@ export default function Landing(){
     <Together/>
     <Wedding/>
     <Plan/>
+    <Mobile/>
     <PerfectMatch/>
     <Footer/>
     </div>

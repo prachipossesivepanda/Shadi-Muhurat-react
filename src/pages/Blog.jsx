@@ -114,7 +114,7 @@ const Blog = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="w-full h-[60vw] lg:w-[22rem] flex-col bg-white flex-row rounded-xl shadow-lg p-6 space-y-6">
+          <div className="w-full h-[60vw] lg:w-[22rem] flex-col bg-white  rounded-xl shadow-lg p-6 space-y-6">
             {/* Search */}
             <input
               type="text"
