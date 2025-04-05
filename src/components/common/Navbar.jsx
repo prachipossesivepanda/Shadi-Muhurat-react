@@ -37,7 +37,7 @@ export default function Navbar() {
       </div>
 
       {/* 🔵 Main Navigation Bar */}
-      <div className="bg-pink-100 w-full h-[70px] flex justify-between items-center px-4 sm:px-10 relative">
+      <div className="bg-orange-50 w-full h-[70px] flex justify-between items-center px-4 sm:px-10 relative">
         
         {/* Left Side - Logo */}
         <div className="relative flex items-center">

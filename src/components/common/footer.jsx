@@ -6,8 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 p-6 flex flex-col md:flex-row items-start">
       {/* Left Section - Email & Social Media */}
-      <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-4">
-        <h2 className="text-2xl font-semibold">Are You In For The Gossips?</h2>
+      <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-4 ml-[140px]">
+        <h2 className="font-[50]  text-[50px]">Are You In For<br></br>
+          The Gossips?</h2>
         
         {/* Logo moved below the heading */}
         <img src={Logo} alt="Shadi Muharat Logo" className="w-40 mt-2" />
@@ -15,30 +16,34 @@ const Footer = () => {
         <p className="text-gray-600 text-sm max-w-md">
           Mauris mattis iaculis turpis sit amet convallis. Aliquam congue vehicula cursus.
           Aenean eget lacus in metus malesuada iaculis ac vitae velit.
-        </p>
+        </p>        
+      </div>
 
-        <div className="flex flex-row w-full gap-2 mt-4">
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            className="border border-gray-300 rounded-md px-3 py-2 w-full md:w-60 focus:outline-none"
-          />
-          <button className="bg-red-500 text-white px-4 py-2 rounded-full font-medium hover:bg-red-600">
+      {/* Right Section - Footer Links */}
+      <div className="w-full md:w-2/3 flex flex-wrap justify-between mt-10 md:mt-0">
+      <div className="w-full gap-9 mt-4">
+          
+            <form >
+              <div className="flex justify-between items-center space-x-4">
+                <input
+               type="email"
+               placeholder="Enter your email address"
+               className=" border-gray-300 rounded-md px-3 py-2 w-full md:w-60 focus:outline-none"
+                />
+            <button className="bg-red-500 text-white px-4 py-2 rounded-full font-medium hover:bg-red-600">
             Register Now
-          </button>
-        </div>
-
-        {/* Social Media Icons */}
+            </button>
+              </div>
+            </form>
+                        
+          {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 text-gray-600 text-xl">
           <FaFacebookF className="cursor-pointer hover:text-blue-600" />
           <FaYoutube className="cursor-pointer hover:text-red-500" />
           <FaLinkedinIn className="cursor-pointer hover:text-blue-500" />
           <FaInstagram className="cursor-pointer hover:text-pink-500" />
         </div>
-      </div>
-
-      {/* Right Section - Footer Links */}
-      <div className="w-full md:w-2/3 flex flex-wrap justify-between mt-10 md:mt-0">
+        </div>
         {/* Community */}
         <div className="w-1/3 mt-6">
           <h3 className="font-semibold text-lg">Community</h3>

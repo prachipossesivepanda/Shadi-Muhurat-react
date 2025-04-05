@@ -15,14 +15,14 @@ function App() {
   return (
   <div>
     <Router>
-       {/* <Landing />  */}
+       <Landing /> 
         {/* <Authentication/>   */}
         {/* <Contact/>  */}
        {/* * <Gallery/>  */}
        {/* <Pricing/> */}
        {/* <Faq/> */}
         {/* <Aboutus/>  */}
-        <Gallery/>  
+        {/* <Gallery/>   */}
        {/* <Blog/> */}
       </Router>
       </div>

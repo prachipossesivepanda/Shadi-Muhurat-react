@@ -22,20 +22,22 @@ const HeroSection = () => {
         <img src={ExperienceSVG} alt="Experience" className="w-2/4 max-w-xs sm:max-w-sm mt-4 mb-6" />
 
         {/* Search Bar & Login Button */}
-        <div className="flex flex-col sm:flex-row items-center space-y-6 sm:space-y-0 sm:space-x-4 w-full max-w-lg">
+        <div className="flex flex-col sm:flex-row items-center">
           
           {/* Search Bar */}
-          <div className="flex flex-row items-center bg-white p-4 px-6 rounded-full shadow-lg w-full max-w-[29vw] h-[2.18vw] sm:w-auto">
            <form>
-            <input
+            <div className="flex">
+              <input
               type="text"
               placeholder="Search here..."
-              className="px-6  py-8 outline-none rounded-full text-gray-700 bg-transparent flex-center w-full"
-            /> <button className="bg-red-500 hover:bg-red-400 text-white px-4 py-2 rounded-full w-full sm:w-[124px]">
-            Login
-          </button>
+              className="px-7  py-2 outline-none rounded-full text-gray-700 bg-transparent flex-center bg-white"
+              /> 
+              <button className="bg-red-500 hover:bg-red-400 px-7 ml-[8px] rounded-4xl">
+              Login
+              </button>
+            </div>
+           
           </form>
-          </div>
 
          
           
