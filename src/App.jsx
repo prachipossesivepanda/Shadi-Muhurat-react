@@ -16,14 +16,23 @@ function App() {
   <div>
     <Router>
        <Landing /> 
+<<<<<<< HEAD
     
+=======
+        {/* <Authentication/>   */}
+>>>>>>> 96632e35a47b9f8ecb906aed65bd3d420a6e4795
         {/* <Contact/>  */}
        {/* * <Gallery/>  */}
        {/* <Pricing/> */}
        {/* <Faq/> */}
         {/* <Aboutus/>  */}
+<<<<<<< HEAD
           {/* <Gallery/> */}
          {/* <Blog/> */}
+=======
+        {/* <Gallery/>   */}
+       {/* <Blog/> */}
+>>>>>>> 96632e35a47b9f8ecb906aed65bd3d420a6e4795
       </Router>
       </div>
   );
