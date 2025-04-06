@@ -111,7 +111,7 @@ const Pricing = () => {
         </div>
 
         {/* Plans Grid */}
-        <div className="relative grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 z-10 w-[70vw] h-full max-w-6xl">
+        <div className="relative grid grid-cols-1 mb-[50px] sm:grid-cols-2 lg:grid-cols-3 gap-4 z-10 w-[70vw] h-full max-w-6xl">
           {filteredPlans.map((plan, index) => (
             <div
               key={index}

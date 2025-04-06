@@ -11,22 +11,28 @@ import Faq from "./pages/Faq";
 import Aboutus from "./pages/Aboutus";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
-import Testimonial from "./pages/Testimonial";
 
 function App() {
   return (
   <div>
     <Router>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 164e9b1461d2baee517c97cea522f5a384379ed2
         {/* <Landing /> */}
         {/*  <Authentication/> */}
         {/* <Contact/>  */}
         {/* * <Gallery/>  */}
+<<<<<<< HEAD
         {/* <Pricing/> */}
+=======
+>>>>>>> 164e9b1461d2baee517c97cea522f5a384379ed2
         {/* <Faq/> */}
         {/* <Aboutus/>  */}
         {/* <Gallery/>  */}
         {/* <BlogDetails/> */}
+<<<<<<< HEAD
          <Blog/> 
 
       {/* <Landing/> */}
@@ -39,6 +45,10 @@ function App() {
            {/* <Gallery/>  */}
            {/* <BlogDetails/> */}
          {/* <Blog/> */}
+=======
+        {/* <Blog/> */}
+        <Pricing/>
+>>>>>>> 164e9b1461d2baee517c97cea522f5a384379ed2
       </Router>
       </div>
   );
