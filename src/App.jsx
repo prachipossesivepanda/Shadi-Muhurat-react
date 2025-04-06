@@ -17,30 +17,28 @@ function App() {
   return (
   <div>
     <Router>
-<<<<<<< Updated upstream
+
         {/* <Landing /> */}
         {/*  <Authentication/> */}
         {/* <Contact/>  */}
         {/* * <Gallery/>  */}
-        <Pricing/>
+        {/* <Pricing/> */}
         {/* <Faq/> */}
         {/* <Aboutus/>  */}
         {/* <Gallery/>  */}
         {/* <BlogDetails/> */}
-        {/* <Blog/> */}
-=======
+         <Blog/> 
+
       {/* <Landing/> */}
        {/* <Authentication/>  */}
         {/* <Contact/>  */}
        {/* * <Gallery/>  */}
-         <Pricing/>  
         {/* <Faq/>  */}
         {/* <Aboutus/>  */}
         {/* <Testimonial/> */}
            {/* <Gallery/>  */}
            {/* <BlogDetails/> */}
          {/* <Blog/> */}
->>>>>>> Stashed changes
       </Router>
       </div>
   );
