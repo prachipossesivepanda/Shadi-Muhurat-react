@@ -4,10 +4,10 @@ import Logo from "../../assets/images/Logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 p-6 flex flex-col md:flex-row items-start">
+    <footer className="bg-white p-6 flex flex-col md:flex-row items-start">
       {/* Left Section - Email & Social Media */}
       <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-4 ml-[140px]">
-        <h2 className="font-[50]  text-[50px]">Are You In For<br></br>
+        <h2 className="font-[350]  text-[50px]">Are You In For<br></br>
           The Gossips?</h2>
         
         {/* Logo moved below the heading */}
@@ -20,14 +20,14 @@ const Footer = () => {
       </div>
 
       {/* Right Section - Footer Links */}
-      <div className="w-full md:w-2/3 flex flex-wrap justify-between mt-10 md:mt-0">
-      <div className="w-full gap-9 mt-4">
+      <div className="w-full md:w-2/3  ml-20 flex flex-wrap mt-10 md:mt-0">
+      <div className="w-full gap-5 mt-4">
           
             <form >
               <div className="flex justify-between items-center space-x-4">
                 <input
                type="email"
-               placeholder="Enter your email address"
+               placeholder="enter your email address"
                className=" border-gray-300 rounded-md px-3 py-2 w-full md:w-60 focus:outline-none"
                 />
             <button className="bg-red-500 text-white px-4 py-2 rounded-full font-medium hover:bg-red-600">
@@ -35,7 +35,7 @@ const Footer = () => {
             </button>
               </div>
             </form>
-                        
+        <hr className="mt-6"></hr> 
           {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 text-gray-600 text-xl">
           <FaFacebookF className="cursor-pointer hover:text-blue-600" />
@@ -44,6 +44,8 @@ const Footer = () => {
           <FaInstagram className="cursor-pointer hover:text-pink-500" />
         </div>
         </div>
+
+        <div className="flex mt-3  justify-between w-full">        
         {/* Community */}
         <div className="w-1/3 mt-6">
           <h3 className="font-semibold text-lg">Community</h3>
@@ -78,7 +80,10 @@ const Footer = () => {
             <li className="hover:underline cursor-pointer">Intellectual Property</li>
           </ul>
         </div>
-      </div>
+        </div>
+        </div>
+        <div className="Bottom">
+        </div>
     </footer>
   );
 };
