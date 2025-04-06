@@ -7,12 +7,8 @@ import ice from "../assets/images/ice.svg";
 import Mrs from "../assets/images/Mrs.svg";
 import Background from "../assets/images/Background.svg";
 import Blog1 from "../assets/images/Blog1.svg";
-import garden from "../assets/images/garden.svg";
-import shadow from "../assets/images/shadow.svg";
-import Aligned from "../assets/images/Aligned ring.svg";
 import Couple13 from "../assets/images/Couple-13.svg";
 import Couple2 from "../assets/images/Couple 2.svg";
-// import Couple14 from "../assets/images/Couple-14svg";
 import Couple14 from "../assets/images/Couple-14.svg";
 import pandal from "../assets/images/Pandal.svg";
 import Christian from "../assets/images/Christian.svg";
@@ -43,15 +39,80 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Blog Cards + Sidebar Section */}
-      <div className="bg-[#FCECEC] w-full   relative p-10">
+      {/* Blog Section */}
+      <div className="bg-[#FCECEC] w-full relative p-10">
         <img
           src={Background}
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover opacity-30 z-0"
         />
 
-        <div className="relative z-10 flex  lg:flex-row gap-10 justify-center">
+        <div className="relative z-10 flex flex-col md:flex-row gap-10 items-start justify-center">
+          {/* Sidebar */}
+          <div className="w-full md:w-[22rem] bg-white rounded-xl shadow-lg p-6 space-y-6">
+            {/* Search */}
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full border border-gray-300 rounded-md p-2"
+            />
+
+            {/* Recent Posts */}
+            <div>
+              <h3 className="text-lg font-bold mb-2">Recent Posts</h3>
+              <ul className="space-y-4 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <img src={twoRing} alt="Post 1" className="w-10 h-10 rounded-lg" />
+                  <div>
+                    <p className="font-medium">26th September, 2024</p>
+                    <p>Quisque a sem risus. Suspendisse risus.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-2">
+                  <img src={ice} alt="Post 2" className="w-10 h-10 rounded-lg" />
+                  <div>
+                    <p className="font-medium">26th September, 2024</p>
+                    <p>Best Wedding Venues</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-2">
+                  <img src={Mrs} alt="Post 3" className="w-10 h-10 rounded-lg" />
+                  <div>
+                    <p className="font-medium">26th September, 2024</p>
+                    <p>Top Wedding Dresses</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Tags */}
+            <div>
+              <h3 className="text-lg font-Raleway mb-2">Tags</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Connection</span>
+                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Match Making</span>
+                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Love</span>
+                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Soulmate search</span>
+                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Perfect Pairing</span>
+                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Romance</span>
+                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Date Your way</span>
+              </div>
+            </div>
+
+            {/* Instagram */}
+            <div>
+              <h3 className="text-lg font-bold mb-2">Instagram</h3>
+              <div className="grid grid-cols-3 gap-2">
+                <img src={Couple13} alt="Instagram 1" className="w-full h-16 object-cover rounded-2xl" />
+                <img src={pandal} alt="Instagram 2" className="w-full h-16 object-cover rounded-2xl" />
+                <img src={Couple2} alt="Instagram 3" className="w-full h-16 object-cover rounded-2xl" />
+                <img src={Couple14} alt="Instagram 4" className="w-full h-16 object-cover rounded-2xl" />
+                <img src={Christian} alt="Instagram 5" className="w-full h-16 object-cover rounded-2xl" />
+                <img src={Couple9} alt="Instagram 6" className="w-full h-16 object-cover rounded-2xl" />
+              </div>
+            </div>
+          </div>
+
           {/* Blog Cards */}
           <div className="flex-1 space-y-6">
             {/* Big Card */}
@@ -112,81 +173,23 @@ const Blog = () => {
               </div>
             </div>
           </div>
-
-          {/* Sidebar */}
-          <div className="w-full h-[60vw] lg:w-[22rem] flex-col bg-white  rounded-xl shadow-lg p-6 space-y-6">
-            {/* Search */}
-            <input
-              type="text"
-              placeholder="Search..."
-              className="w-full border border-gray-300 rounded-md p-2"
-            />
-
-            {/* Recent Posts */}
-            <div>
-              <h3 className="text-lg font-bold mb-2">Recent Posts</h3>
-              <ul className="space-y-4 text-sm text-gray-700">
-                <li className="flex items-start gap-2">
-                  <img src={twoRing} alt="Post 1" className="w-10 h-10 rounded-lg" />
-                  <div>
-                    <p className="font-medium">26th September, 2024</p>
-                    <p>Quisque a sem risus. Suspendisse risus.</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <img src={ice} alt="Post 2" className="w-10 h-10 rounded-lg" />
-                  <div>
-                    <p className="font-medium">26th September, 2024</p>
-                    <p>Best Wedding Venues</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <img src={Mrs} alt="Post 3" className="w-10 h-10 rounded-lg" />
-                  <div>
-                    <p className="font-medium">26th September, 2024</p>
-                    <p>Top Wedding Dresses</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            {/* Tags (Without map) */}
-            <div>
-              <h3 className="text-lg font-Raleway mb-2">Tags</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Connection</span>
-                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Match Making</span>
-                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Love</span>
-                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Soulmate search</span>
-                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Perfect Pairing</span>
-                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Romance</span>
-                <span className="bg-gray-200 px-3 py-1 text-[#EF3B59] rounded-full text-sm">Date Your way</span>
-              </div>
-            </div>
-
-            {/* Instagram Gallery (Without map) */}
-            <div>
-              <h3 className="text-lg font-bold mb-2">Instagram</h3>
-              <div className="grid grid-cols-3 gap-2">
-                <img src={Couple13} alt="Instagram 1" className="w-full h-16 object-cover rounded-2xl" />
-                <img src={pandal} alt="Instagram 2" className="w-full h-16 object-cover rounded-2xl" />
-                <img src={Couple2} alt="Instagram 3" className="w-full h-16 object-cover rounded-2xl" />
-                <img src={Couple14} alt="Instagram 4" className="w-full h-16 object-cover rounded-2xl" />
-                <img src={Christian} alt="Instagram 5" className="w-full h-16 object-cover rounded-2xl" />
-                <img src={Couple9} alt="Instagram 6" className="w-full h-16 object-cover rounded-2xl" />
-              </div>
-            </div>
-          </div>
-        
+        </div>
 
         {/* Bottom Blog Image */}
-        <div className=" flex flex-col  justify-end">
+        <div className="flex w-[60vw] h-[30vw] justify-end mt-10">
           <img
             src={Blog1}
             alt="Blog1"
-            className="w-[21vw] h-[31vw]   sm:w-[70%] md:w-[50%] lg:w-[40%] rounded-xl shadow-md object-cover"
+            className="w-[21vw] sm:w-[70%] md:w-[50%] lg:w-[40%] rounded-xl shadow-md object-cover"
           />
         </div>
+
+        {/* Pagination Dots */}
+        <div className="flex justify-center gap-2 mt-4">
+          <span className="w-3 h-3 bg-[#EF3B59] rounded-full"></span>
+          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
         </div>
       </div>
 

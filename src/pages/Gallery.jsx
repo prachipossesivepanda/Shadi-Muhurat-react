@@ -6,7 +6,7 @@ import Background from '../assets/images/Background.svg';
 import Couple1 from '../assets/images/Couple1.svg';
 import Couple2 from '../assets/images/Couple 2.svg';
 import Couple3 from '../assets/images/Couple3.svg';
-import Couple4 from '../assets/images/Couple 4.svg';
+import Couple4 from '../assets/images/Couple4.svg';
 import Couple5 from '../assets/images/Couple 5.svg';
 import Couple6 from '../assets/images/Couple 6.svg';
 import Couple7 from '../assets/images/Couple 7.svg';

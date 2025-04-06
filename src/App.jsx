@@ -11,11 +11,13 @@ import Faq from "./pages/Faq";
 import Aboutus from "./pages/Aboutus";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
+import Testimonial from "./pages/Testimonial";
 
 function App() {
   return (
   <div>
     <Router>
+<<<<<<< Updated upstream
         {/* <Landing /> */}
         {/*  <Authentication/> */}
         {/* <Contact/>  */}
@@ -26,6 +28,19 @@ function App() {
         {/* <Gallery/>  */}
         {/* <BlogDetails/> */}
         {/* <Blog/> */}
+=======
+      {/* <Landing/> */}
+       {/* <Authentication/>  */}
+        {/* <Contact/>  */}
+       {/* * <Gallery/>  */}
+         <Pricing/>  
+        {/* <Faq/>  */}
+        {/* <Aboutus/>  */}
+        {/* <Testimonial/> */}
+           {/* <Gallery/>  */}
+           {/* <BlogDetails/> */}
+         {/* <Blog/> */}
+>>>>>>> Stashed changes
       </Router>
       </div>
   );
