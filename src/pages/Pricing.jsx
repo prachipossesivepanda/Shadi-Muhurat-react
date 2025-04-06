@@ -84,7 +84,7 @@ const Pricing = () => {
       {/* Pricing Section */}
       <div className="relative flex flex-col items-center min-h-screen p-6">
         <img src={Background} alt="Background" className="absolute w-full h-full object-cover" />
-        <h1 className="text-[30px] md:text-3xl mt-8 font-Raleway text-center mb-6 z-10 ">
+        <h1 className="text-[30px] md:text-3xl mt-8 font-Raleway font-medium text-center mb-6 z-10 ">
           Choose The Perfect Plan
         </h1>
 
@@ -92,7 +92,7 @@ const Pricing = () => {
         <div className="z-10 flex items-center justify-center mb-6">
           <div className="flex bg-[#F9C58B40] rounded-full p-1 w-64 shadow-md">
             <button
-              className={`w-1/2 py-2 text-sm md:text-lg font-semibold rounded-full transition-all duration-300 ${
+              className={`w-1/2 py-2 text-sm md:text-lg font-poppins leading-3 rounded-full transition-all duration-300 ${
                 isMonthly ? 'bg-[#F05A8E] text-white shadow' : 'text-[#C1645C]'
               }`}
               onClick={() => setIsMonthly(true)}
@@ -100,7 +100,7 @@ const Pricing = () => {
               Monthly Plans
             </button>
             <button
-              className={`w-1/2 py-2 text-sm md:text-lg font-semibold rounded-full transition-all duration-300 ${
+              className={`w-1/2 py-2 text-sm md:text-lg font-poppins rounded-full transition-all duration-300 ${
                 !isMonthly ? 'bg-[#F05A8E] text-white shadow' : 'text-gray-700'
               }`}
               onClick={() => setIsMonthly(false)}
@@ -115,7 +115,7 @@ const Pricing = () => {
           {filteredPlans.map((plan, index) => (
             <div
               key={index}
-              className={`border p-6 rounded-lg shadow-lg ${plan.bgColor} hover:border white solid hover:bg-gradient-to-b from-[#F05A8E] to-[#ED1C24] hover:text-white bg-opacity-90 text-center h-full w-full transition-all`}
+              className={`border p-6 rounded-2xl shadow-lg ${plan.bgColor} hover:border white solid hover:bg-gradient-to-b from-[#F05A8E] to-[#ED1C24] hover:text-white bg-opacity-90 text-center h-full w-full transition-all`}
             >
               <h2 className="text-2xl md:text-3xl font-bold">
                 {plan.price} <span className="text-lg">/ {plan.period}</span>

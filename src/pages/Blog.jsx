@@ -16,7 +16,7 @@ import Couple9 from "../assets/images/Couple 9.svg";
 
 const Blog = () => {
   return (
-    <div>
+    <div className="bg-[#FCECEC]">
       <Navbar />
 
       {/* Hero Section */}
@@ -39,53 +39,43 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Blog Section */}
-      <div className="bg-[#FCECEC] w-full relative p-10">
-        <img
-          src={Background}
-          alt="Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-30 z-0"
-        />
-
-        <div className="relative z-10 flex flex-col md:flex-row gap-10 items-start justify-center">
+      <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="relative z-10 flex flex-col-reverse lg:flex-row-reverse gap-10 items-start justify-between">
           {/* Sidebar */}
-          <div className="w-full md:w-[22rem] bg-white rounded-xl shadow-lg p-6 space-y-6">
-            {/* Search */}
+          <div className="w-full lg:w-[22rem] bg-white rounded-xl shadow-lg p-6 space-y-6">
             <input
               type="text"
               placeholder="Search..."
               className="w-full border border-gray-300 rounded-md p-2"
             />
 
-            {/* Recent Posts */}
             <div>
               <h3 className="text-lg font-bold mb-2">Recent Posts</h3>
               <ul className="space-y-4 text-sm text-gray-700">
-                <li className="flex items-start gap-2">
-                  <img src={twoRing} alt="Post 1" className="w-10 h-10 rounded-lg" />
+                <li className="flex items-start gap-3">
+                  <img src={twoRing} alt="Post 1" className="w-12 h-12 object-cover rounded-md" />
                   <div>
-                    <p className="font-medium">26th September, 2024</p>
-                    <p>Quisque a sem risus. Suspendisse risus.</p>
+                    <p className="text-xs font-semibold">26th September, 2024</p>
+                    <p>Quisque a sem risus.</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-2">
-                  <img src={ice} alt="Post 2" className="w-10 h-10 rounded-lg" />
+                <li className="flex items-start gap-3">
+                  <img src={ice} alt="Post 2" className="w-12 h-12 object-cover rounded-md" />
                   <div>
-                    <p className="font-medium">26th September, 2024</p>
+                    <p className="text-xs font-semibold">26th September, 2024</p>
                     <p>Best Wedding Venues</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-2">
-                  <img src={Mrs} alt="Post 3" className="w-10 h-10 rounded-lg" />
+                <li className="flex items-start gap-3">
+                  <img src={Mrs} alt="Post 3" className="w-12 h-12 object-cover rounded-md" />
                   <div>
-                    <p className="font-medium">26th September, 2024</p>
+                    <p className="text-xs font-semibold">26th September, 2024</p>
                     <p>Top Wedding Dresses</p>
                   </div>
                 </li>
               </ul>
             </div>
 
-            {/* Tags */}
             <div>
               <h3 className="text-lg font-Raleway mb-2">Tags</h3>
               <div className="flex flex-wrap gap-2">
@@ -99,7 +89,6 @@ const Blog = () => {
               </div>
             </div>
 
-            {/* Instagram */}
             <div>
               <h3 className="text-lg font-bold mb-2">Instagram</h3>
               <div className="grid grid-cols-3 gap-2">
@@ -111,16 +100,20 @@ const Blog = () => {
                 <img src={Couple9} alt="Instagram 6" className="w-full h-16 object-cover rounded-2xl" />
               </div>
             </div>
-          </div>
+            </div>
+
+            <div>
+              <img src={Blog1} alt="Blog1" className="w-full h-auto object-cover rounded-xl" />
+            </div>
+          
 
           {/* Blog Cards */}
           <div className="flex-1 space-y-6">
-            {/* Big Card */}
-            <div className="bg-white rounded-xl shadow-lg w-full overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full">
               <img
                 src={twoRing}
                 alt="Blog1"
-                className="w-full h-[30vw] object-cover"
+                className="w-full h-[240px] object-cover"
               />
               <div className="p-6">
                 <h2 className="text-2xl font-semibold font-serif my-2">
@@ -130,15 +123,14 @@ const Blog = () => {
                   Planning a wedding is never easy. From deciding on a venue to
                   selecting the right photographer...
                 </p>
-                <a href="#" className="font-medium text-[red] hover:underline">
+                <a href="#" className="font-medium text-[red] hover:underline text-sm">
                   Read more
                 </a>
               </div>
             </div>
 
-            {/* Small Card 1 */}
-            <div className="bg-white rounded-xl shadow-md w-full overflow-hidden">
-              <div className="bg-gray-200 flex w-full h-auto items-center justify-center">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full">
+              <div className="bg-gray-200 w-full h-[200px] flex items-center justify-center">
                 <img src={ice} alt="Ice" className="h-full w-full object-cover" />
               </div>
               <div className="p-5">
@@ -149,15 +141,14 @@ const Blog = () => {
                   Your wedding is the most beautiful day of your life, so let’s
                   make it stress-free...
                 </p>
-                <a href="#" className="font-medium text-[red] hover:underline">
+                <a href="#" className="font-medium text-[red] hover:underline text-sm">
                   Read more
                 </a>
               </div>
             </div>
 
-            {/* Small Card 2 */}
-            <div className="bg-white rounded-xl shadow-md w-full overflow-hidden">
-              <div className="bg-gray-200 flex w-full h-auto items-center justify-center">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full">
+              <div className="bg-gray-200 w-full h-[200px] flex items-center justify-center">
                 <img src={Mrs} alt="Mrs" className="h-full w-full object-cover" />
               </div>
               <div className="p-5">
@@ -167,29 +158,19 @@ const Blog = () => {
                 <p className="text-gray-700 text-sm mt-2">
                   Discover the best wedding dress styles that suit your taste...
                 </p>
-                <a href="#" className="font-medium text-[red] hover:underline">
+                <a href="#" className="font-medium text-[red] hover:underline text-sm">
                   Read more
                 </a>
               </div>
             </div>
+
+            <div className="flex w-full justify-center mt-4 gap-2">
+              <button className="w-3 h-3 bg-[#EF3B59] rounded-full" aria-label="Page 1"></button>
+              <button className="w-3 h-3 bg-gray-300 rounded-full" aria-label="Page 2"></button>
+              <button className="w-3 h-3 bg-gray-300 rounded-full" aria-label="Page 3"></button>
+              <button className="w-3 h-3 bg-gray-300 rounded-full" aria-label="Page 4"></button>
+            </div>
           </div>
-        </div>
-
-        {/* Bottom Blog Image */}
-        <div className="flex w-[60vw] h-[30vw] justify-end mt-10">
-          <img
-            src={Blog1}
-            alt="Blog1"
-            className="w-[21vw] sm:w-[70%] md:w-[50%] lg:w-[40%] rounded-xl shadow-md object-cover"
-          />
-        </div>
-
-        {/* Pagination Dots */}
-        <div className="flex justify-center gap-2 mt-4">
-          <span className="w-3 h-3 bg-[#EF3B59] rounded-full"></span>
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
         </div>
       </div>
 

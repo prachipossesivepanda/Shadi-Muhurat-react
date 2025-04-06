@@ -16,15 +16,17 @@ function App() {
   return (
   <div>
     <Router>
+
         {/* <Landing /> */}
         {/*  <Authentication/> */}
         {/* <Contact/>  */}
         {/* * <Gallery/>  */}
+        {/* <Pricing/> */}
         {/* <Faq/> */}
         {/* <Aboutus/>  */}
         {/* <Gallery/>  */}
         {/* <BlogDetails/> */}
-        {/* <Blog/> */}
+         {/* <Blog/>  */}
         <Pricing/>
       </Router>
       </div>
