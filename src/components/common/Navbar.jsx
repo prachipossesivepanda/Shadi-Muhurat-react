@@ -16,23 +16,19 @@ export default function Navbar() {
         
         {/* Left Side - FAQ & Support */}
         <div className="flex space-x-2 sm:space-x-4">
-          <a href="#">FAQs</a>
+          <a className="font-[400]"href="#">FAQs</a>
           <span>|</span>
-          <a href="#">Help & Support</a>
-        </div>
-
-        {/* Middle - Contact Info (Hidden on small screens) */}
-        <div className="hidden md:flex space-x-4">
-          <span>+91 986-544-3399 |</span>
-          <span>Shadimuharath@Gmail.com</span>
+          <a className="font-[400]" href="#">Help & Support</a>
         </div>
 
         {/* Right Side - Social Media Icons */}
-        <div className="flex space-x-2 sm:space-x-3">
-          <a href="#" className="hover:text-pink-300"><FaFacebook /></a>
-          <a href="#" className="hover:text-pink-300"><FaInstagram /></a>
-          <a href="#" className="hover:text-pink-300"><FaLinkedin /></a>
-          <a href="#" className="hover:text-pink-300"><FaYoutube /></a>
+        <div className="flex space-x-2 sm:space-x-3 ">
+          <span className="font-[400] ">+91 986-544-3399 |</span>
+          <span className="font-[400]">Shadimuharath@Gmail.com</span>
+          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaFacebook /></a>
+          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaInstagram /></a>
+          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaLinkedin /></a>
+          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaYoutube /></a>
         </div>
       </div>
 
@@ -56,7 +52,7 @@ export default function Navbar() {
         {/* Center - Navigation Links */}
         <div className={`absolute md:static top-16 left-0 w-full md:w-auto bg-pink-100 md:bg-transparent md:flex 
                         flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-red-400 
-                        font-semibold text-center md:text-left transition-all duration-300 
+                        font-[600] text-center md:text-left transition-all duration-300 
                         ${menuOpen ? "block" : "hidden md:flex"}`}>
           <Link to="/" className="hover:text-red-600">Home</Link>
           <Link to="/about" className="hover:text-red-600">About</Link>
