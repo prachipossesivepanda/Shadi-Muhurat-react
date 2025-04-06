@@ -3,7 +3,8 @@ import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 import Engagement from '../assets/images/Engagement.svg';
 import Background from '../assets/images/Background.svg';
-
+import Tick from '../assets/images/Tick.svg';
+import Cross from '../assets/images/Cross.svg';
 const allPlans = [
   {
     price: '$25',
@@ -12,12 +13,12 @@ const allPlans = [
       { text: 'Rate up to 50 profiles per day', included: true },
       { text: 'Explore limited profiles', included: true },
       { text: '0 Credit / Month', included: true },
-      { text: 'Rewinds', included: false },
+      { text: 'Rewinds', included: true },
       { text: 'Browse Privately', included: false },
       { text: 'See who’s viewed your profile', included: false },
     ],
     bgColor: 'bg-white',
-    buttonColor: 'bg-[#F05A8E] text-white',
+    buttonColor: 'bg-gradient-to-b from-[#F05A8E] to-[#ED1C24] text-white',
   },
   {
     price: 'Free',
@@ -30,7 +31,7 @@ const allPlans = [
       { text: 'Browse Privately', included: false },
       { text: 'See who’s viewed your profile', included: false },
     ],
-    bgColor: 'bg-gradient-to-b from-[#F05A8E] to-[#ED1C24]',
+    bgColor: 'bg-gradient-to-b from-[#F05A8E] to-[#ED1C24] text-white',
     buttonColor: 'bg-white text-[#ED1C24]',
   },
   {
@@ -45,7 +46,7 @@ const allPlans = [
       { text: 'See who’s viewed your profile', included: true },
     ],
     bgColor: 'bg-white',
-    buttonColor: 'bg-[#F05A8E] text-white',
+    buttonColor: 'bg-gradient-to-b from-[#F05A8E] to-[#ED1C24] text-white',
   },
 ];
 
@@ -83,7 +84,7 @@ const Pricing = () => {
       {/* Pricing Section */}
       <div className="relative flex flex-col items-center min-h-screen p-6">
         <img src={Background} alt="Background" className="absolute w-full h-full object-cover" />
-        <h1 className="text-2xl md:text-3xl mt-8 font-Raleway text-center mb-6 z-10">
+        <h1 className="text-[30px] md:text-3xl mt-8 font-Raleway text-center mb-6 z-10 ">
           Choose The Perfect Plan
         </h1>
 
@@ -110,21 +111,21 @@ const Pricing = () => {
         </div>
 
         {/* Plans Grid */}
-        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 z-10 w-[60vw] h-[60 vw] max-w-6xl">
+        <div className="relative grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 z-10 w-[70vw] h-full max-w-6xl">
           {filteredPlans.map((plan, index) => (
             <div
               key={index}
-              className={`border p-6 rounded-lg shadow-lg ${plan.bgColor} bg-opacity-90 text-center w-full`}
+              className={`border p-6 rounded-lg shadow-lg ${plan.bgColor} hover:border white solid hover:bg-gradient-to-b from-[#F05A8E] to-[#ED1C24] hover:text-white bg-opacity-90 text-center h-full w-full transition-all`}
             >
               <h2 className="text-2xl md:text-3xl font-bold">
                 {plan.price} <span className="text-lg">/ {plan.period}</span>
               </h2>
-              <h3 className="text-lg md:text-xl font-semibold mt-4">Features</h3>
+              <h3 className="text-lg md:text-l text-left font-Regular mt-4">Features</h3>
               <ul className="mt-2 space-y-2">
                 {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-center gap-2 justify-center text-gray-600 text-sm md:text-base">
-                    <span className={`w-6 h-6 flex items-center justify-center rounded-full ${feature.included ? 'bg-green-500' : 'bg-red-500'}`}>
-                      {feature.included ? '✔' : '✖'}
+                  <li key={i} className="flex items-center gap-2 justify-left text-[0.833vw] font-Regular  text-left text-sm md:text-base">
+                    <span className={`w-[0.781vw]h-[0.781vw] flex items-center justify-center rounded-full ${feature.included ? <img src={Tick} alt="Green tick"/> : <img src={Cross} alt="Red Cross"/>}`}>
+                      {feature.included ? <img src={Tick} alt="Green tick" className='w-[0.781vw] h-[0.781vw]'/> : <img src={Cross} alt="Red Cross" className='w-[0.781vw] h-[0.781vw]' />}
                     </span>
                     {feature.text}
                   </li>
@@ -132,7 +133,7 @@ const Pricing = () => {
               </ul>
               <button
                 onClick={() => alert(`You selected ${plan.price} plan!`)}
-                className={`mt-6 rounded-full font-bold py-2 px-4 w-full text-sm md:text-base ${plan.buttonColor}`}
+                className={`mt-5 rounded-full  font-bold py-2 px-4 w-full text-sm md:text-base ${plan.buttonColor}`}
               >
                 Get Started Now
               </button>
