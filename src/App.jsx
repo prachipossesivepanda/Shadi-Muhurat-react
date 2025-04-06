@@ -20,12 +20,12 @@ function App() {
         {/*  <Authentication/> */}
         {/* <Contact/>  */}
         {/* * <Gallery/>  */}
-        <Pricing/>
         {/* <Faq/> */}
         {/* <Aboutus/>  */}
         {/* <Gallery/>  */}
         {/* <BlogDetails/> */}
         {/* <Blog/> */}
+        <Pricing/>
       </Router>
       </div>
   );

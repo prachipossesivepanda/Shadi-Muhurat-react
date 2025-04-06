@@ -8,7 +8,6 @@ import Service from "../components/Home/Service";
 import Stats from "../components/Home/Stats";
 import Together from "../components/Home/Together";
 import Wedding from "../components/Home/Wedding";
-import Perfect from "../components/Home/PerfectMatch";
 import Footer from "../components/common/Footer";
 import PerfectMatch from "../components/Home/PerfectMatch";
 import Mobile from "../components/Home/Mobile";

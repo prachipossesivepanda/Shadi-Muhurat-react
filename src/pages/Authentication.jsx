@@ -4,88 +4,104 @@ import Footer from '../components/common/Footer';
 import Ring from '../assets/images/Ring.svg';
 import Background from '../assets/images/Background.svg';
 import Sign from '../assets/images/Sign.svg';
-import Apple from '../assets/images/Apple.svg';
+import Engagement from '../assets/images/Engagement.svg';
 import Google from '../assets/images/Google.svg';
-import Facebook from '../assets/images/Facebook.svg'; // Import Facebook icon
+import Facebook from '../assets/images/Facebook.svg';
+import Apple from "../assets/images/apple.svg";
 
 const Authentication = () => {
   return (
     <div className="bg-[#FFF4EE] min-h-screen flex flex-col">
-      <Navbar />  
+      <Navbar />
 
+      {/* Banner Section */}
       <div className="relative">
-        <img src={Ring} alt="Angoothi" className="w-full" />
+        <img
+          src={Engagement}
+          alt="Engagement"
+          className="w-full object-cover max-h-[300px] sm:max-h-[400px]"
+        />
+        <div className="absolute top-1/2 left-6 transform -translate-y-1/2 text-white">
+          <h1 className="font-Rosarivo text-[9vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] lowercase">
+            Login
+          </h1>
+          <p className="mt-2 font-poppins text-[4vw] sm:text-[2vw] lg:text-[1.1vw] font-light">
+            Now find your life partner easy and fast.
+          </p>
+        </div>
       </div>
 
+      {/* Form Section */}
       <div className="relative">
-        <img src={Background} alt="Parda" className="w-full" />
+        <img
+          src={Background}
+          alt="Background"
+          className="w-full object-cover max-h-[300px] sm:max-h-none"
+        />
 
-        {/* White Box Centered */}
-        <div className="absolute inset-0 flex justify-center items-center">
-          <div className="bg-white w-[36vw] h-[43vw] shadow-lg rounded-lg p-6 flex flex-col items-center">
-            <img src={Sign} alt='Sign' className='w-full mt-7' />
+        <div className="absolute inset-0 flex justify-center items-center px-4 sm:px-10 py-8">
+          <div className="bg-white w-full max-w-[95vw] sm:max-w-[80vw] md:max-w-[50vw] lg:max-w-[36vw] shadow-lg rounded-2xl p-6 sm:p-10 pb-10 flex flex-col items-center">
 
-            <div className="w-full">
-              <input
-                type="email"
-                
-    
-                placeholder="Your mail here"
-                className="w-full px-4 py-2 mt-12 border text-[#C1645CB2] border-[#ED1C2426] rounded-full focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]"
-              />
+            {/* Title Image */}
+            <img src={Sign} alt="Sign" className="w-full mt-2 mb-4" />
+
+            {/* Email Field */}
+            <input
+              type="email"
+              placeholder="Your Mail Here"
+              autoFocus
+              className="w-full px-4 py-3 sm:px-5 sm:py-3 mt-4 border border-[#ED1C2426] rounded-full text-sm text-[#C1645CB2] focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]"
+            />
+
+            {/* Password Field */}
+            <input
+              type="password"
+              placeholder="Password"
+              className="w-full px-4 py-3 sm:px-5 sm:py-3 mt-3 border border-[#ED1C2426] rounded-full text-sm text-[#C1645CB2] focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]"
+            />
+
+            {/* Remember + Forgot */}
+            <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center mt-3 text-sm">
+              <label className="flex items-center mb-2 sm:mb-0">
+                <input type="checkbox" className="h-4 w-4 rounded-lg accent-[#FF6B6B]" />
+                <span className="ml-2 text-gray-700">Remember Me</span>
+              </label>
+              <a href="#" className="text-[#FF6B6B] hover:underline">Forgot Password?</a>
             </div>
 
-            <div className="w-full mt-4">
-              {/* <label className="block text-gray-700 text-sm font-medium mb-1">Password</label> */}
-              <input
-                type="password"
-                placeholder=" Password"
-                className="w-full px-4 py-2 border  text-[#C1645CB2] rounded-full border-[#ED1C2426] focus:outline-none focus:ring-2 focus:ring-[#FF6B6B]"
-              />
-            </div>
-
-            <div className="w-full flex items-center justify-between mt-4">
-              <div className="flex items-center">
-                <input type="checkbox" className="h-4 w-4 text-[#FF6B6B] focus:ring-[#FF6B6B] border-gray-300 rounded" />
-                <label className="ml-2 block text-sm text-gray-700">Remember Me</label>
-              </div>
-              <a href="#" className="text-sm text-[#FF6B6B] hover:underline">Forgot Password?</a>
-            </div>
-
-            <button className="w-[30vw] mt-6 p-3 rounded-full bg-[#FF6B6B] focus:ring-2 focus:outline-none hover:bg-[#E05555] text-white font-medium">
+            {/* Login Button */}
+            <button className="w-full mt-5 py-3 bg-gradient-to-r from-[#FF6B6B] to-[#ED1C24] text-white rounded-full text-base font-semibold hover:opacity-90 transition">
               Login
             </button>
 
-            <div className="text-center mt-4">
-              <span className="text-gray-500 text-sm">Or login with</span>
+            {/* Or Login With */}
+            <div className="text-center mt-5 text-gray-500 text-sm">Or login with</div>
+
+            {/* Social Buttons */}
+            <div className="w-full flex flex-col sm:flex-row gap-3 mt-4">
+              <button className="flex items-center justify-center gap-2 w-full py-3 border border-[#ED1C2426] rounded-full shadow bg-white hover:shadow-md">
+                <img src={Apple} alt="Apple" className="w-5 h-5" />
+                <span className="font-bold text-sm">Apple</span>
+              </button>
+              <button className="flex items-center justify-center gap-2 w-full py-3 border border-[#ED1C2426] rounded-full shadow bg-white hover:shadow-md">
+                <img src={Google} alt="Google" className="w-5 h-5" />
+                <span className="font-bold text-sm">Google</span>
+              </button>
+              <button className="flex items-center justify-center gap-2 w-full py-3 border border-[#ED1C2426] rounded-full shadow bg-white hover:shadow-md">
+                <img src={Facebook} alt="Facebook" className="w-5 h-5" />
+                <span className="font-bold text-sm">Facebook</span>
+              </button>
             </div>
 
-            <div className="flex justify-center space-x-4 mt-4">
-              {/* Apple Button */}
-              <div className="w-[10vw] h-[10vw] md:w-[5vw] md:h-[5vw]  -mt-5 rounded-full flex items-center justify-center border border-gray-300 shadow-md bg-white">
-                <img src={Apple} alt="Apple" className="w-[60%]" />
-              </div>
-              {/* Google Button */}
-              
-      
-              <div className="w-[10vw] h-[10vw] md:w-[5vw] md:h-[5vw] rounded-full flex items-center justify-center -mt-5 border border-gray-300 shadow-md bg-white">
-                <img src={Facebook} alt="Facebook" className="w-[60%]" />
-              </div>
-              {/* Facebook Button */}
-              <div className="w-[10vw] h-[10vw] md:w-[5vw] md:h-[5vw] rounded-full  -mt-5 flex items-center justify-center border border-gray-300 shadow-md bg-white">
-                <img src={Google} alt="Google" className="w-[60%] " />
-              </div>
-              
-              
-            </div>
-
-            <div className="text-center mt-4">
-              <span className="text-gray-600 text-sm">Don't have an account? </span>
-              <a href="#" className="text-[#FF6B6B] hover:underline text-sm font-medium">Create An Account</a>
+            {/* Create Account */}
+            <div className="text-center mt-6 text-sm">
+              <span className="text-gray-600">Don't have an account? </span>
+              <a href="#" className="text-[#FF6B6B] font-medium hover:underline">Create An Account</a>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
