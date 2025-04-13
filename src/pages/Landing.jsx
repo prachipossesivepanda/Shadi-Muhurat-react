@@ -11,6 +11,11 @@ import Wedding from "../components/Home/Wedding";
 import Footer from "../components/common/Footer";
 import PerfectMatch from "../components/Home/PerfectMatch";
 import Mobile from "../components/Home/Mobile";
+import Anjali from "../components/Home/anjali";
+import AppDownloadBanner from "../components/Home/Mobile";
+import RecentCouples from "../components/Home/RecentCouple";
+import Latest from "../components/Home/Latest";
+import TestimonialSection from "../components/Home/TestimonialSection";
 //import ErrorBoundary from "../components/Home/ErrorBoundary";
 
 
@@ -19,6 +24,7 @@ export default function Landing(){
   return(
     <div >
     <Navbar/>
+    
     <HeroSection/>
     <Registerform/>
     <Profile/>
@@ -29,7 +35,11 @@ export default function Landing(){
     <Together/>
     <Wedding/>
     <Plan/>
-    <Mobile/>
+    <AppDownloadBanner/>
+    <RecentCouples/>
+    <TestimonialSection/>
+    <Anjali/>
+    <Latest/>
     <PerfectMatch/>
     <Footer/>
     </div>

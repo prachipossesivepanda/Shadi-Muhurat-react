@@ -1,47 +1,41 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook , FaLinkedin, FaInstagram, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
-//import Logo from "../../assets/images/Shadi.svg";
-//import Muharat from "../../assets/images/Muharath.svg";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaLinkedin, FaInstagram, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/images/Logo.svg";
 import Login from "../../assets/images/Frame 29.svg";
+import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full mt-6">
-      {/* 🔴 Top Red Bar */}
-      <div className="bg-red-600 text-white w-full h-[38px] py-2 px-4 md:px-8 flex flex-wrap justify-between items-center text-xs sm:text-sm">
-        
+    <div className="w-full h-auto mt-12">
+      {/* 🔴 Top Red Bar - Hidden on Mobile */}
+      <div className="hidden md:flex bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white w-full h-[px] py-2 px-8 justify-between items-center text-sm">
         {/* Left Side - FAQ & Support */}
-        <div className="flex space-x-2 sm:space-x-4">
-          <a className="font-[400]"href="#">FAQs</a>
+        <div className="flex space-x-4">
+          <Link  to="/faq" className="font-[400]">FAQs</Link>
           <span>|</span>
-          <a className="font-[400]" href="#">Help & Support</a>
+          <Link to="/contact" className="font-[400]" >Help & Support</Link>
         </div>
 
-        {/* Right Side - Social Media Icons */}
-        <div className="flex space-x-2 sm:space-x-3 ">
-          <span className="font-[400] ">+91 986-544-3399 |</span>
+        {/* Right Side - Contact & Social Media */}
+        <div className="flex space-x-3 items-center">
+          <span className="font-[400]">+91 986-544-3399 |</span>
           <span className="font-[400]">Shadimuharath@Gmail.com</span>
-          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaFacebook /></a>
-          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaInstagram /></a>
-          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaLinkedin /></a>
-          <a href="#" className="mt-[0.156vw] w-[0.938vw] h-[0.938vw] hover:text-pink-300"><FaYoutube /></a>
+          <a href="#" className="hover:text-pink-300"><IoLogoFacebook /></a>
+          <a href="#" className="hover:text-pink-300"><FaYoutube /></a>
+          <a href="#" className="hover:text-pink-300"><FaLinkedin /></a>
+          <a href="#" className="hover:text-pink-300"><FaInstagram /></a>
         </div>
       </div>
 
-      {/* 🔵 Main Navigation Bar */}
-      <div className="bg-orange-50 w-full h-[70px] flex justify-between items-center px-4 sm:px-10 relative">
-        
+      {/* 🔵 Main Navigation Bar - Visible on All Screens */}
+      <div className="bg-orange-50 w-full h-[4.01vw] flex justify-between items-center px-4 sm:px-10 relative">
         {/* Left Side - Logo */}
-        <div className="relative flex items-center">
-        
-          {/* Muharat Positioned Below Shadi */}
-          <img src={Logo} alt="ShadiMuhrat Logo" className="h-12 mx-auto md:mx-0" />
-                  
-          
+        <div className="flex items-center">
+          <img src={Logo} alt="ShadiMuhrat Logo" className="h-10" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -62,10 +56,17 @@ export default function Navbar() {
           <Link to="/contact" className="hover:text-red-600">Contact</Link>
         </div>
 
-        {/* Right Side - Login Button (Hidden on mobile) */}
-        <div className="hidden md:block">
-          <img src={Login} alt="Login" className="h-[40px] cursor-pointer" />
-        </div>
+        {/* Right Side - Login Button */}
+       
+          <Link to="/Authentication">
+      <button
+        type="submit"
+        className="w-[6.8vw] h-[2.76vw] flex items-center justify-center gap-[1.25vw] px-[1.25vw] py-[0.52vw] bg-gradient-to-r from-[#F15BB5] to-[#F72C25] hover:opacity-90 text-white rounded-full text-[0.83vw] transition"
+      >
+        Login
+        <ChevronDown size="1vw" />
+      </button>
+    </Link>
       </div>
     </div>
   );

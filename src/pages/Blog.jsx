@@ -20,24 +20,23 @@ const Blog = () => {
 
       {/* Hero Section */}
       <div className="relative w-full">
-        <img
-          src={Engagement}
-          alt="Engagement"
-          className="w-full h-auto object-cover"
-        />
-        <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
-          <h1
-            className="text-6xl font-serif font-Rosarivo lowercase"
-            style={{ fontVariant: "small-caps" }}
-          >
-            Blog
-          </h1>
-          <p className="text-lg mt-2 font-poppins leading-6">
-            Now Find your life partner Easy and fast.
-          </p>
-        </div>
-      </div>
-
+                    <img
+                      src={Engagement}
+                      alt="Engagement"
+                      className="w-full h-auto object-cover"
+                    />
+                    <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+                      <h1
+                        className="text-[5vw] md:text-[6vw]"
+                        style={{ fontFamily: "Rosarivo, serif" }}
+                      >
+                        Blog
+                      </h1>
+                      <p className="text-[3vw] md:text-[1vw] mt-[1vw] font-light leading-snug">
+                        Now Find your life partner Easy and fast.
+                      </p>
+                    </div>
+                  </div>
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="relative z-10 flex flex-col-reverse lg:flex-row-reverse gap-10 items-start justify-between">

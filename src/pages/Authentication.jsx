@@ -15,21 +15,25 @@ const Authentication = () => {
       <Navbar />
 
       {/* Banner Section */}
-      <div className="relative">
-        <img
-          src={Engagement}
-          alt="Engagement"
-          className="w-full object-cover max-h-[300px] sm:max-h-[400px]"
-        />
-        <div className="absolute top-1/2 left-6 transform -translate-y-1/2 text-white">
-          <h1 className="font-Rosarivo text-[9vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] lowercase">
-            Login
-          </h1>
-          <p className="mt-2 font-poppins text-[4vw] sm:text-[2vw] lg:text-[1.1vw] font-light">
-            Now find your life partner easy and fast.
-          </p>
-        </div>
-      </div>
+      
+      <div className="relative w-full h-[50vw] md:h-[21.875vw] ">
+              <img
+                src={Engagement}
+                alt="Engagement"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+                <h1
+                  className="text-[5vw] md:text-[6vw]"
+                  style={{ fontFamily: "Rosarivo, serif" }}
+                >
+                  Login
+                </h1>
+                <p className="text-[3vw] md:text-[1vw] mt-[1vw] font-light leading-snug">
+                  Now Find your life partner Easy and fast.
+                </p>
+              </div>
+            </div>
 
       {/* Form Section */}
       <div className="relative">
@@ -40,10 +44,15 @@ const Authentication = () => {
         />
 
         <div className="absolute inset-0 flex justify-center items-center px-4 sm:px-10 py-8">
-          <div className="bg-white w-full max-w-[95vw] sm:max-w-[80vw] md:max-w-[50vw] lg:max-w-[36vw] shadow-lg rounded-2xl p-6 sm:p-10 pb-10 flex flex-col items-center">
+        {/* <div className="w-full max-w-[95vw] sm:max-w-[80vw] md:max-w-[60vw] lg:max-w-[36vw]"> */}
+
+          <div className="bg-white w-full h-auto max-w-[95vw] sm:max-w-[50vw] md:max-w-[50vw] lg:max-w-[36vw] gap-2 shadow-lg rounded-2xl p-6 sm:p-10 pb-10 flex flex-col items-center">
 
             {/* Title Image */}
-            <img src={Sign} alt="Sign" className="w-full mt-2 mb-4" />
+            <h3 className=" w-[29.635vw] text-[2.917vw] font-medium text-center text-Black">
+            Sign In To Account
+          </h3>
+          <p className='text-sm px-2 text-grey-500 mt-2 leading-relaxed'>Experience the joy of life and create happiness together with Shadi Muharath.</p>
 
             {/* Email Field */}
             <input

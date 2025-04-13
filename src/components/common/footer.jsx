@@ -1,89 +1,112 @@
 import React from "react";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Logo from "../../assets/images/Logo.svg";
+import visa from "../../assets/images/visa.svg";
+import Paypal from "../../assets/images/paypal.svg";
+import Mastercard from "../../assets/images/Mastercard.svg";
+import apple from "../../assets/images/apple pay.svg";
+import Amex from "../../assets/images/Amex.svg";
+import skrill from "../../assets/images/Skrill.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-white p-6 flex flex-col md:flex-row items-start">
-      {/* Left Section - Email & Social Media */}
-      <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-4 ml-[140px]">
-        <h2 className="font-[350]  text-[50px]">Are You In For<br></br>
-          The Gossips?</h2>
-        
-        {/* Logo moved below the heading */}
-        <img src={Logo} alt="Shadi Muharat Logo" className="w-40 mt-2" />
+    <footer className="bg-white px-[4vw] pt-10 pb-4 flex-col space-y-10">
+      {/* Top Section */}
+      <div className="flex flex-col md:flex-row justify-between w-full gap-10">
+        {/* Left */}
+        <div className="md:w-1/2 space-y-6 flex md:flex-col flex-col-reverse">
+          <div className="text-[40px] md:text-[50px] font-medium font-Raleway leading-tight text-center md:text-left mb-4  mt-6 md:mb-0">
+            Are You In For <br /> The Gossips?
+          </div>
 
-        <p className="text-gray-600 text-sm max-w-md">
-          Mauris mattis iaculis turpis sit amet convallis. Aliquam congue vehicula cursus.
-          Aenean eget lacus in metus malesuada iaculis ac vitae velit.
-        </p>        
+          <div className="text-center md:text-left space-y-4">
+            <img src={Logo} alt="Logo" className="w-40 mx-auto md:mx-0" />
+            <p className="text-gray-600 text-sm max-w-md mx-auto md:mx-0 px-4 md:px-0">
+              Mauris mattis lacinia turpis sit amet convallis. Aliquam congue
+              vehicula cursus. Aenean eget lacus in metus malesuada lacinia ac
+              vitae velit. Fusce elementum fringilla mattis. Donec quis dolor orci.
+            </p>
+          </div>
+        </div>
+
+        {/* Right */}
+        <div className="md:w-1/2 space-y-6">
+          {/* Email + Button */}
+          <div className="flex flex-col md:flex-row md:items-center gap-4 w-full">
+            <input
+              type="email"
+              placeholder="enter Your email address"
+              className="border-b border-gray-400 py-2 w-full md:w-2/3 focus:outline-none"
+            />
+            <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white px-6 py-2 rounded-full whitespace-nowrap">
+              Register Now
+            </button>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex space-x-4 text-xl text-red-500 justify-center md:justify-start">
+            <IoLogoFacebook />
+            <FaYoutube />
+            <FaLinkedin />
+            <FaInstagram />
+          </div>
+
+          {/* Links */}
+          <div className="flex flex-col md:flex-row justify-between w-full gap-8 mt-4 items-center text-center md:items-start md:text-left">
+            {/* Community */}
+            <div>
+              <h3 className="font-semibold mb-2">Community</h3>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>Guidelines</li>
+                <li>Success Stories</li>
+                <li>Plenty of Interests</li>
+                <li>Plenty of Cities</li>
+                <li>The Blog</li>
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="font-semibold mb-2">Contact</h3>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>Support</li>
+                <li>Security</li>
+                <li>Safety Tips</li>
+                <li>Impressum</li>
+              </ul>
+            </div>
+
+            {/* Legal & Privacy */}
+            <div>
+              <h3 className="font-semibold mb-2">Legal & Privacy</h3>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Consumer Health Data Policy</li>
+                <li>Cookie Policy</li>
+                <li>Intellectual Property</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Right Section - Footer Links */}
-      <div className="w-full md:w-2/3  ml-20 flex flex-wrap mt-10 md:mt-0">
-      <div className="w-full gap-5 mt-4">
-          
-            <form >
-              <div className="flex justify-between items-center space-x-4">
-                <input
-               type="email"
-               placeholder="enter your email address"
-               className=" border-gray-300 rounded-md px-3 py-2 w-full md:w-60 focus:outline-none"
-                />
-            <button className="bg-red-500 text-white px-4 py-2 rounded-full font-medium hover:bg-red-600">
-            Register Now
-            </button>
-              </div>
-            </form>
-        <hr className="mt-6"></hr> 
-          {/* Social Media Icons */}
-        <div className="flex space-x-4 mt-4 text-gray-600 text-xl">
-          <FaFacebookF className="cursor-pointer hover:text-blue-600" />
-          <FaYoutube className="cursor-pointer hover:text-red-500" />
-          <FaLinkedinIn className="cursor-pointer hover:text-blue-500" />
-          <FaInstagram className="cursor-pointer hover:text-pink-500" />
+      {/* Bottom Section */}
+      <hr className="mt-10 border-gray-200" />
+      <div className="flex flex-col md:flex-row justify-between items-center text-center gap-4 pt-4">
+        <p className="text-sm text-gray-500">
+          ©Shadi Muharath all rights Reserved
+        </p>
+        <div className="flex gap-3 flex-wrap justify-center items-center">
+          <img src={visa} alt="Visa" className="h-[25px]" />
+          <img src={Amex} alt="Amex" className="h-[25px]" />
+          <img src={apple} alt="Apple Pay" className="h-[25px]" />
+          <img src={skrill} alt="Skrill" className="h-[25px]" />
+          <img src={Mastercard} alt="Mastercard" className="h-[25px]" />
+          <img src={Paypal} alt="PayPal" className="h-[25px]" />
         </div>
-        </div>
-
-        <div className="flex mt-3  justify-between w-full">        
-        {/* Community */}
-        <div className="w-1/3 mt-6">
-          <h3 className="font-semibold text-lg">Community</h3>
-          <ul className="text-gray-600 text-sm space-y-1">
-            <li className="hover:underline cursor-pointer">Guidelines</li>
-            <li className="hover:underline cursor-pointer">Success Stories</li>
-            <li className="hover:underline cursor-pointer">Plenty of Interests</li>
-            <li className="hover:underline cursor-pointer">Plenty of Cities</li>
-            <li className="hover:underline cursor-pointer">The Blog</li>
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div className="w-1/3 mt-6">
-          <h3 className="font-semibold text-lg">Contact</h3>
-          <ul className="text-gray-600 text-sm space-y-1">
-            <li className="hover:underline cursor-pointer">Support</li>
-            <li className="hover:underline cursor-pointer">Security</li>
-            <li className="hover:underline cursor-pointer">Safety Tips</li>
-            <li className="hover:underline cursor-pointer">Impressum</li>
-          </ul>
-        </div>
-
-        {/* Legal & Privacy */}
-        <div className="w-1/3 mt-6">
-          <h3 className="font-semibold text-lg">Legal & Privacy</h3>
-          <ul className="text-gray-600 text-sm space-y-1">
-            <li className="hover:underline cursor-pointer">Terms of Service</li>
-            <li className="hover:underline cursor-pointer">Privacy Policy</li>
-            <li className="hover:underline cursor-pointer">Consumer Health Data Policy</li>
-            <li className="hover:underline cursor-pointer">Cookie Policy</li>
-            <li className="hover:underline cursor-pointer">Intellectual Property</li>
-          </ul>
-        </div>
-        </div>
-        </div>
-        <div className="Bottom">
-        </div>
+      </div>
     </footer>
   );
 };

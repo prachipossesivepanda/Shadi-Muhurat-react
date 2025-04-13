@@ -26,15 +26,25 @@ const Gallery = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative w-full">
-        <img src={Engagement} alt="Engagement" className="w-full" />
-        <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
-          <h1 className="text-6xl font-serif font-Rosarivo lowercase" style={{ fontVariant: 'small-caps' }}>
-            Gallery
-          </h1>
-          <p className="text-lg mt-2 font-poppins leading-6">Now find your life partner easy and fast.</p>
-        </div>
-      </div>
+      
+       <div className="relative w-full">
+              <img
+                src={Engagement}
+                alt="Engagement"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+                <h1
+                  className="text-[5vw] md:text-[6vw]"
+                  style={{ fontFamily: "Rosarivo, serif" }}
+                >
+                  Gallery
+                </h1>
+                <p className="text-[3vw] md:text-[1vw] mt-[1vw] font-light leading-snug">
+                  Now Find your life partner Easy and fast.
+                </p>
+              </div>
+            </div>
 
       {/* Background Section */}
       <div className="bg-[#FCECEC] min-h-screen flex flex-col justify-center items-center p-10 relative">

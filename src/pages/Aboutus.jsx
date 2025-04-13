@@ -5,9 +5,7 @@ import Footer from "../components/common/Footer";
 import Background from "../assets/images/Background.svg";
 import Engagement from "../assets/images/Engagement.svg";
 import Cylinder from "../assets/images/cylinder couple.svg";
-import Genuine from "../assets/images/Genuine.svg";
-import Laks from "../assets/images/laks.svg";
-import Most from "../assets/images/Most.svg";
+
 import user from "../assets/images/user.svg";
 import men from "../assets/images/mens.svg";
 import women from "../assets/images/womens.svg";
@@ -16,6 +14,8 @@ import Goyal from "../assets/images/Goyal.svg";
 import Jain from "../assets/images/Jain.svg";
 import Kailash from "../assets/images/Kailash.svg";
 import Navjot from "../assets/images/Navjot.svg";
+import Icon from '../assets/images/Icon.svg';
+
 
 const AboutUs = () => {
   return (
@@ -24,27 +24,85 @@ const AboutUs = () => {
 
       {/* Hero Section */}
       <div className="relative w-full">
-        <img src={Engagement} alt="Engagement" className="w-full h-auto object-cover" />
-        <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white max-w-xs md:max-w-lg">
-          <h1 className="text-4xl md:text-6xl font-serif font-Rosarivo lowercase" style={{ fontVariant: "small-caps" }}>
-            About Us
-          </h1>
-          <p className="text-sm md:text-lg mt-2 font-poppins leading-6">
-            Now Find your life partner Easy and fast.
-          </p>
-        </div>
-      </div>
+                    <img
+                      src={Engagement}
+                      alt="Engagement"
+                      className="w-full h-auto object-cover"
+                    />
+                    <div className="absolute top-1/2 left-[4vw] md:left-[7.5vw] transform -translate-y-1/2 text-white">
+                      <h1
+                        className="text-[5vw] md:text-[6vw]"
+                        style={{ fontFamily: "Rosarivo, serif" }}
+                      >
+                        About Us
+                      </h1>
+                      <p className="text-[3vw] md:text-[1vw] mt-[1vw] font-light leading-snug">
+                        Now Find your life partner Easy and fast.
+                      </p>
+                    </div>
+                  </div>
 
       {/* Background Section */}
       <div className="relative flex flex-col items-center min-h-screen p-4 md:p-6">
         <img src={Background} alt="Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
 
         {/* Features Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 p-4 md:p-8 max-w-5xl mx-auto">
-          <img src={Genuine} alt="Genuine" className="w-full h-auto rounded-lg shadow-md" />
-          <img src={Laks} alt="Laks" className="w-full h-auto rounded-lg shadow-md" />
-          <img src={Most} alt="Most" className="w-full h-auto rounded-lg shadow-md" />
-        </div>
+        <div className="bg-[#FFF6F4] py-12 flex justify-center font-ramaraja mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-x-6 max-w-6xl px-4">
+        
+                {/* Card 1 */}
+                <div className="flex justify-center">
+                  <div className="bg-white rounded-[10px] text-center shadow-sm w-[310px] h-[310px] flex flex-col items-center pt-[50px] pb-[40px]">
+                    <img
+                      src={Icon}
+                      alt="Icon representing genuine profiles"
+                      className="w-16 h-16 rounded-full border border-gray-400 mb-6"
+                    />
+                    <h3 className="bg-gradient-to-r from-[#ED1C24] to-[#F05A8E] bg-clip-text text-transparent font-semibold text-lg mb-4">
+                      Genuine Profiles
+                    </h3>
+                    <p className="text-black font-medium text-sm px-6">
+                      Contact Genuine Profiles With 100% Verified Mobile
+                    </p>
+                  </div>
+                </div>
+        
+                {/* Card 2 */}
+                <div className="flex justify-center">
+                  <div className="bg-white rounded-[10px] text-center shadow-sm w-[310px] h-[310px] flex flex-col items-center pt-[50px] pb-[40px]">
+                    <img
+                      src={Icon}
+                      alt="Icon representing most trusted"
+                      className="w-16 h-16 rounded-full border border-gray-400 mb-6"
+                    />
+                    <h3 className="bg-gradient-to-r from-[#ED1C24] to-[#F05A8E] bg-clip-text text-transparent font-semibold text-lg mb-4">
+                      Most Trusted
+                    </h3>
+                    <p className="text-black  font-medium  text-sm px-6">
+                      The Most Trusted Wedding Matrimony Brand Lorem
+                    </p>
+                  </div>
+                </div>
+        
+                {/* Card 3 */}
+                <div className="flex justify-center">
+                  <div className="bg-white rounded-[10px] text-center shadow-sm w-[310px] h-[310px] flex flex-col items-center pt-[50px] pb-[40px]">
+                    <img
+                      src={Icon}
+                      alt="Icon representing 2000+ weddings"
+                      className="w-16 h-16 rounded-full border border-gray-400 mb-6"
+                    />
+                    <h3 className="bg-gradient-to-r from-[#ED1C24] to-[#F05A8E] bg-clip-text text-transparent font-semibold text-lg mb-4">
+                      2000+ Weddings
+                    </h3>
+                    <p className="text-black font-Raleway font-medium text-sm px-6">
+                      Lakhs of People Have Found Their Life Partner
+                    </p>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
 
         {/* Welcome Section */}
         <div className="flex flex-col md:flex-row bg-transparent justify-center items-center p-4 md:p-8 rounded-lg shadow-lg max-w-5xl mx-auto">
