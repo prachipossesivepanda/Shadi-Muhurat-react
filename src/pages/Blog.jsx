@@ -160,7 +160,7 @@ const Blog = () => {
             <div className="bg-white rounded-2xl shadow-md p-4 sm:p-6 space-y-6">
               <div className="relative w-full">
                 <span className="absolute inset-y-0 right-2 top-1/2 -translate-y-1/2">
-                  <IoSearchCircle color="blue" size={32} />
+                  <IoSearchCircle color="pink" size={32} />
                 </span>
                 <input
                   type="text"

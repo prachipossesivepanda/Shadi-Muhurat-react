@@ -46,7 +46,7 @@ const TestimonialSection = () => {
           Trusted by thousands, loved by many.
         </p>
 
-        <div className="relative border border-black py-5 mx-[8.802vw]  w-full flex justify-center">
+        <div className="relative py-5 mx-[8.802vw]  w-full flex justify-center">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={30}

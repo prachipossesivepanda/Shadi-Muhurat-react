@@ -15,7 +15,13 @@ const ContactSection = () => {
       <div className="relative w-full">
         <img src={Engagement} alt="Engagement" className="w-full object-cover max-h-[300px] sm:max-h-[400px]" />
         <div className="absolute top-1/2 left-[4vw] transform -translate-y-1/2 text-white">
-          <h1 className="text-[6vw] font-Rosarivo lowercase" style={{ fontVariant: 'small-caps' }}>
+          
+            
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-[6vw] font-serif px-2"
+            style={{ fontFamily: "Rosarivo, serif" }}
+          >
+
             Contact Us
           </h1>
           <p className="text-[1.5vw] mt-[0.8vw] font-poppins leading-snug">

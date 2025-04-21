@@ -402,7 +402,7 @@ const AboutUs = () => {
         </section> */}
         <section className="bg-[#FFF4EE] py-6 md:py-1 px-4 md:px-6 text-center">
   <h2 className="text-xl md:text-[3.8vw] font-medium font-Raleway text-gray-800">Our Team</h2>
-  <p className="text-gray-600 text-sm md:text-[1.2vw] max-w-2xl mx-auto mt-2 hidden sm:block">
+  <p className="text-gray-600 text-sm md:text-[0.6vw] max-w-2xl mx-auto mt-2 hidden sm:block">
     Personalized matchmaking services designed to connect you with your ideal life partner, based on compatibility, values, and aspirations.
   </p>
 
@@ -446,10 +446,10 @@ const AboutUs = () => {
     </Swiper>
 
     {/* Arrows */}
-    <button className="prev-arrow absolute -left-8 top-1/2 -translate-y-1/2 bg-[#FCE2C5] rounded-full p-3 shadow cursor-pointer z-60 ">
+    <button className="prev-arrow absolute -left-12  top-1/2 -translate-y-1/2 bg-[#FCE2C5] rounded-full p-3 shadow cursor-pointer z-60 ">
       <IoChevronBack className="text-[#C1645C]" />
     </button>
-    <button className="next-arrow absolute -right-8 top-1/2 -translate-y-1/2 bg-[#FCE2C5] rounded-full p-3 shadow cursor-pointer z-60 ">
+    <button className="next-arrow absolute -right-12 top-1/2 -translate-y-1/2 bg-[#FCE2C5] rounded-full p-3 shadow cursor-pointer z-60 ">
       <IoChevronForward className="text-[#C1645C]" />
     </button>
     
