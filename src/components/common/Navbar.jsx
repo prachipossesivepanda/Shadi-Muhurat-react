@@ -4,15 +4,15 @@ import { IoLogoFacebook } from "react-icons/io";
 import { FaLinkedin, FaInstagram, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/images/Logo.svg";
 import Login from "../../assets/images/Frame 29.svg";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown} from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full h-auto mt-12">
+    <div className="w-full  mt-12">
       {/* 🔴 Top Red Bar - Hidden on Mobile */}
-      <div className="hidden md:flex bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white w-full h-[px] py-2 px-8 justify-between items-center text-sm">
+      <div className="hidden sm:flex bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white w-full h-full py-2 px-8 justify-between items-center text-sm">
         {/* Left Side - FAQ & Support */}
         <div className="flex space-x-4">
           <Link  to="/faq" className="font-[400]">FAQs</Link>
@@ -53,19 +53,22 @@ export default function Navbar() {
           <Link to="/gallery" className="hover:text-red-600">Gallery</Link>
           <Link to="/blog" className="hover:text-red-600">Blog</Link>
           <Link to="/pricing" className="hover:text-red-600">Pricing</Link>
-          <Link to="/contact" className="hover:text-red-600">Contact</Link>
+          
         </div>
 
         {/* Right Side - Login Button */}
        
           <Link to="/Authentication">
-      <button
-        type="submit"
-        className="w-[6.8vw] h-[2.76vw] flex items-center justify-center gap-[1.25vw] px-[1.25vw] py-[0.52vw] bg-gradient-to-r from-[#F15BB5] to-[#F72C25] hover:opacity-90 text-white rounded-full text-[0.83vw] transition"
-      >
-        Login
-        <ChevronDown size="1vw" />
-      </button>
+
+
+<button
+  type="submit"
+  className=" w-[6.8vw] h-[2.76vw] hidden sm:flex items-center justify-center  gap-[0.6vw] px-[1.25vw] py-[0.52vw] bg-gradient-to-r from-[#F15BB5] to-[#F72C25] hover:opacity-90 text-white rounded-full text-[0.83vw] transition"
+>
+  Login
+  <ChevronDown size="1vw" />
+</button>
+
     </Link>
       </div>
     </div>

@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Authentication from './pages/Authentication';
 import Faq from './pages/Faq';
 import Gallery from './pages/Gallery';
+
 import BlogDetails from './pages/BlogDetails';
 
 const App = () => {
@@ -21,7 +22,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} /> 
           <Route path="/Authentication" element={<Authentication />} /> 
           <Route path="/gallery" element={<Gallery />}/> 
-          <Route path="/faq" element={<Faq />} />  
+          <Route path="/faq" element={<Faq />} /> 
+          {/* <Route path="/blog" element={<Blog/>}/>  */}
           <Route path ="/blog/:id" element={<BlogDetails />} />
          
          </Routes>

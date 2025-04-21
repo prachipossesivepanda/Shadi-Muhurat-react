@@ -1,90 +1,117 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import Couple3 from "../../assets/images/Couple3.svg";
-import Couple22 from "../../assets/images/Couple22.svg";
-import Couple25 from "../../assets/images/Couple25.svg";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
-const testimonials = [
-  {
-    id: 1,
-    text: "At Shadi Muharat, We Take Pride in Helping Couples Create The Wedding Of Their Dreams. But Don't Just Take Our Word For It — Hear What Our Happy Couples Have To Say! We Believe in Making Every Celebration Unique, And It's Our Joy To Be Part Of Such A Special Moment In Your Lives.",
-    name: "Dipak Hilal Patil",
-    email: "dipak2511@gmail.com",
-    image: Couple3,
-  },
-  {
-    id: 2,
-    text: "Amazing service! Shadi Muharat made our wedding day unforgettable with their unique planning and attention to detail. Highly recommended!",
-    name: "Priya Sharma",
-    email: "priya.sharma@gmail.com",
-    image: Couple22,
-  },
-  {
-    id: 3,
-    text: "The team at Shadi Muharat turned our vision into reality. Every moment was perfect, and we couldn’t be happier!",
-    name: "Rohan Mehta",
-    email: "rohan.mehta@gmail.com",
-    image: Couple25,
-  },
-];
+import Couple3 from "../../assets/images/Couple3.svg";
+import couple22 from "../../assets/images/Couple22.svg";
+import couple23 from "../../assets/images/Couple23.svg";
+// import { IoArrowForwardCircleOutline } from "react-icons/io5";
+
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const TestimonialSection = () => {
+  const testimonials = [
+    {
+      text: "At Shadi Muharath, we take pride in helping couples create the wedding of their dreams. But don’t just take our word for it – hear what our happy couples have to say! We believe in making every celebration unique, and it's our joy to be part of such a special moment in your lives.",
+      name: "Dipak Hilal Patil",
+      email: "dipakpatil2@gmail.com",
+      image: Couple3,
+    },
+    {
+      text: "The team at Shadi Muharath made our wedding day unforgettable with their personalized service. Highly recommend them for anyone looking for a dream wedding!",
+      name: "Priya Sharma",
+      email: "priyasharma@gmail.com",
+      image: couple22,
+    },
+    {
+      text: "Amazing experience! Shadi Muharath turned our vision into reality with such creativity and care. Thank you for the beautiful memories!",
+      name: "Rohan Mehta",
+      email: "rohanmehta@gmail.com",
+      image: couple23,
+    },
+  ];
+
   return (
-    <div className="py-14 px-4 bg-[#FFF4F4] relative">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">What They Say About Us</h2>
-        <p className="text-sm text-gray-500 mt-1">Trusted by thousands, loved by many</p>
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-10 py-20 bg-[#FFF4F2]">
+      <div className="text-center w-full max-w-7xl">
+        <h1
+          className="text-4xl sm:text-[3vw] font-medium text-black mb-2"
+          style={{ fontFamily: "Raleway" }}
+        >
+          What They Say About Us
+        </h1>
+        <p className="text-gray-600 text-sm sm:text-base mb-10">
+          Trusted by thousands, loved by many.
+        </p>
 
-      {/* Swiper */}
-      <Swiper
-        modules={[Pagination, Autoplay]}
-        spaceBetween={30}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 4000 }}
-        loop
-        className="max-w-5xl mx-auto"
-      >
-        {testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial.id}>
-            <div className="relative bg-white rounded-xl shadow-md px-10 py-8 max-w-4xl mx-auto">
-              {/* Text Content */}
-              <div className="text-gray-700 text-base md:text-lg leading-relaxed max-w-3xl">
-                <div className="flex mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+        <div className="relative border border-black py-5 mx-[8.802vw]  w-full flex justify-center">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation={{
+              nextEl: ".custom-swiper-button-next",
+              prevEl: ".custom-swiper-button-prev",
+            }}
+             autoplay={{ delay: 5000, disableOnInteraction: false }}
+            
+          >
+            {testimonials.map((testimonial, index) => (
+              <SwiperSlide key={index}>
+                <div className=" relative flex flex-col items-center">
+                  {/* Card */}
+                  <div className="bg-white p-6 sm:p-10   rounded-2xl shadow-lg flex flex-col sm:flex-row items-start gap-6 text-left relative overflow-visible w-full">
+                    {/* Text */}
+                    <div className="flex-1 w-full z-10">
+                      <div className="text-yellow-500 text-xl mb-2">★★★★★</div>
+                      <p className="text-gray-700 text-sm sm:text-xl  leading-relaxed">
+                        {testimonial.text}
+                      </p>
+                    </div>
+
+                    {/* Image */}
+                    <div className="hidden sm:block absolute right-[2.5rem] top-10/12 transform -translate-y-1/2 w-48 h-auto rounded-xl overflow-hidden shadow-lg">
+                      <img
+                        src={testimonial.image}
+                        alt="Couple"
+                        className="w-[391px] h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+
+
+                 
+                  {/* Arrows */}
+          <div className="flex  w-[40vw] justify-end">
+          <div className="absolute -bottom-0 left-1/8 transform -translate-x-1/2 flex gap-3 z-10">
+          {/* <div className="w-10 h-10 bg-red-500 border-4 border-red-500 rounded-full flex items-center justify-center"> */}
+            {/* <IoArrowForwardCircleOutline className="text-white bg-red-500 p-0 rounded-full text-3xl" /> */}
+            <span className="text-3xl cursor-pointer bg-white rounded-full text-black p-2 custom-swiper-button-next">
+
+            <IoIosArrowRoundBack/>
+            </span>
+            {/* </div> */}
+            <span className="text-3xl cursor-pointer bg-[#ED1C24] rounded-full text-white p-2 custom-swiper-button-next">
+
+              <IoIosArrowRoundForward />
+            </span>
+          </div>
+          <div className="mt-6 text-left ">
+                    <p className="font-semibold text-[1.719vw] ">{testimonial.name},</p>
+                    <p className="text-[0.833vw] text-gray-500 pl-19" >{testimonial.email}</p>
+                  </div>
+          </div>
                 </div>
-                <p>{testimonial.text}</p>
-              </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-              {/* Image Absolute Positioned */}
-              <div className="absolute right-[-70px] top-[-10px] w-[180px] h-[220px] border-4 border-pink-200 rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Name & Email */}
-            <div className="text-center mt-20">
-              <p className="text-lg font-semibold text-gray-800">{testimonial.name}</p>
-              <p className="text-sm text-gray-500">{testimonial.email}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+          
+        </div>
+      </div>
+    </section>
   );
 };
 

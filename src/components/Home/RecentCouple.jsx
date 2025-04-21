@@ -4,6 +4,7 @@ import Couple22 from '../../assets/images/Couple22.svg';
 import Couple23 from '../../assets/images/Couple23.svg';
 import Couple3 from '../../assets/images/Couple3.svg';
 import Couple28 from '../../assets/images/Couple28.svg';
+
 export default function RecentCouples() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(4);
@@ -59,72 +60,50 @@ export default function RecentCouples() {
   }
 
   return (
-    <div className="bg-amber-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-medium font-Raleway text-center mb-2">Recent Couples</h2>
-        <p className="text-center font-poppins font-light text-gray-600 mb-8 mx-auto max-w-2xl text-sm">
-          Matrimonial success stories from our platform. Here are some of our recent successful matches who found their perfect soul mate on our platform.
+    <div className="py-8  hidden sm:block">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-[2vw] font-medium text-center mb-2" style={{ fontFamily: 'Raleway' }}>
+          Recent Couples
+        </h2>
+        <p className="text-center font-poppins font-light text-gray-600 mb-8 mx-auto max-w-2xl text-[0.9vw]">
+          Personalized matchmaking services designed to connect you with your ideal life partner, based on compatibility, values, and aspirations.
         </p>
 
         <div className="relative">
           {/* Left Arrow */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 bg-white rounded-full p-2 shadow z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -ml-3 bg-[#FCE2C5] rounded-full p-2 shadow z-10"
             aria-label="Previous slide"
           >
-            <ChevronLeft className="w-6 h-6 text-amber-800" />
+            <ChevronLeft className="w-6 h-6 text-[#C1645C]" />
           </button>
 
           {/* Carousel */}
-          <div className="flex justify-center gap-4 overflow-hidden px-6">
-            <div className="flex gap-4 transition-transform duration-300">
-              {displayItems.length > 0 && (
-                <div className="rounded-xl overflow-hidden shadow-md flex-shrink-0 w-64 h-80">
+          <div className="flex justify-center overflow-hidden">
+            <div className="flex gap-3 transition-transform duration-300">
+              {displayItems.map((item) => (
+                <div
+                  key={item.id}
+                  className="rounded-xl overflow-hidden shadow-md flex-shrink-0  w-[15vw] h-auto"
+                >
                   <img
-                    src={displayItems[0].image}
-                    alt={displayItems[0].alt}
+                    src={item.image}
+                    alt={item.alt}
                     className="w-full h-full object-cover"
                   />
                 </div>
-              )}
-              {displayItems.length > 1 && (
-                <div className="rounded-xl overflow-hidden shadow-md flex-shrink-0 w-64 h-80">
-                  <img
-                    src={displayItems[1].image}
-                    alt={displayItems[1].alt}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              )}
-              {displayItems.length > 2 && (
-                <div className="rounded-xl overflow-hidden shadow-md flex-shrink-0 w-64 h-80">
-                  <img
-                    src={displayItems[2].image}
-                    alt={displayItems[2].alt}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              )}
-              {displayItems.length > 3 && (
-                <div className="rounded-xl overflow-hidden shadow-md flex-shrink-0 w-64 h-80">
-                  <img
-                    src={displayItems[3].image}
-                    alt={displayItems[3].alt}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              )}
+              ))}
             </div>
           </div>
 
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 bg-white rounded-full p-2 shadow z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 -mr-3 bg-[#FCE2C5] rounded-full p-2 shadow z-10"
             aria-label="Next slide"
           >
-            <ChevronRight className="w-6 h-6 text-amber-800" />
+            <ChevronRight className="w-6 h-6 text-[#C1645C]" />
           </button>
         </div>
       </div>

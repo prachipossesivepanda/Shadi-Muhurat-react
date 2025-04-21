@@ -16,6 +16,7 @@ import AppDownloadBanner from "../components/Home/Mobile";
 import RecentCouples from "../components/Home/RecentCouple";
 import Latest from "../components/Home/Latest";
 import TestimonialSection from "../components/Home/TestimonialSection";
+// import Stand from "../../components/Home/Stand";
 //import ErrorBoundary from "../components/Home/ErrorBoundary";
 
 
@@ -33,6 +34,7 @@ export default function Landing(){
     <Stats/>
     
     <Together/>
+    
     <Wedding/>
     <Plan/>
     <AppDownloadBanner/>

@@ -4,28 +4,31 @@ import peopleBanner from "../../assets/images/peoplebanner.svg";
 
 const PerfectMatch = () => {
   return (
-    <section className="relative w-[85.41vw] h-[23.23vw] overflow-hidden mx-auto rounded-[1.25vw] px-[2vw] flex justify-center items-center">
+    <section className="relative  lg:mx-[5.5vw] mx-[0vw] lg:my-[7.5vw] my-[0vw] lg:px-0 px-[2vw] overflow-hidden  rounded-3xl  flex justify-center items-center ">
       {/* Background Rectangle */}
       <img
         src={rectangleBg}
         alt="Background"
-        className="absolute top-0 left-0 w-full h-full object-cover "
+        className="absolute  w-full h-full object-cover "
       />
 
       {/* Content on top of background */}
-      <div className="relative z-10 text-center text-[#4b1d12] px-[1.5vw] max-w-[50vw]">
-        <h2 className="text-[2.5vw] font-Rosarivo mb-[1vw] leading-tight">
+      <div className="relative z-10 text-center text-[#4F1617] ">
+        <h2 
+        className="lg:text-[3.8vw] text-[7vw] lg:mb-[0.5vw] lg:mt-[3vw] mt-[8vw] mb-[4vw] leading-tight" 
+         style={{ fontFamily: "Rosarivo" }}>
           Find your perfect Match now
         </h2>
-        <p className="text-[1vw] text-[#6e4c3e] mb-[2vw] leading-snug">
+        <p className="lg:text-[1vw] text-[3vw]  lg:mb-[3vw] mb-[13vw] text-[#4F1617] opacity-60  lg:w-[45vw] w-[75vw]  font-normal leading-snug"
+        >
           lacinia viverra lacus. Fusce imperdiet ullamcorper metus eu fringilla.
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <div className="flex justify-center gap-[1.2vw]">
-          <button className="bg-[#561C1C] text-white px-[3vw] py-[0.8vw] rounded-full text-[1vw] font-medium hover:bg-[#3e1313] transition">
+        <div className="flex lg:flex-row flex-col justify-center mb-[8vw] gap-[1.2vw]">
+          <button className="bg-[#4F1617] text-white px-[2.3vw] py-[0.6vw] rounded-full lg:text-[0.9vw] text-[5vw] font-normal hover:bg-[#3e1313] transition">
             Register Now
           </button>
-          <button className="border border-[#561C1C] text-[#561C1C] px-[3vw] py-[0.8vw] rounded-full text-[1vw] font-medium hover:bg-[#561C1C] hover:text-white transition">
+          <button className="border border-[#4F1617] text-[#4F1617] px-[2.3vw] py-[0.6vw] rounded-full lg:text-[0.9vw] text-[5vw] font-medium hover:bg-[#561C1C] hover:text-white transition">
             Help & Support
           </button>
         </div>

@@ -7,229 +7,249 @@ import pink from "../../assets/images/pink.svg";
 import Korean from "../../assets/images/Korean.svg";
 import Hands from "../../assets/images/Hands.svg";
 import Profile from "../../assets/images/Prof.svg";
-import title from "../../assets/images/title.svg";
-import men from "../../assets/images/mens.svg";
-import women from "../../assets/images/womens.svg";
 import heart from "../../assets/images/heart.svg";
-import { FaUsers, FaMars, FaVenus, FaHeart } from "react-icons/fa";
-// import { FiUsers } from "react-icons/fi";
-// import {FiUsers} from "react-icons/fa";
-// import { FaUserShield } from "react-icons/fa";
 import { LuUsersRound } from "react-icons/lu";
-import { RiUserHeartFill } from "react-icons/ri";
-import { MdVerified } from "react-icons/md";
+import Pair from "../../assets/images/Pair.svg";
+import People from "../../assets/images/People.svg";
+import Male from "../../assets/images/Male.svg";
+import Coup from "../../assets/images/Coup.svg";
+import User from "../../assets/images/Usercontainer.svg";
 
 const Together = () => {
   return (
-    <div className="w-full bg-white overflow-hidden">
+    <div className="bg-[#FFF4EE] 
+    lg:bg-white mx-[3.125vw] rounded-xl overflow-hidden">
       {/* Scrolling Banner */}
-      <div className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] py-3 relative overflow-hidden">
-        <div className="animate-marquee whitespace-nowrap flex">
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <FaUsers size={20} />
+      <div className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] rounded-2xl py-4 sm:py-6 relative overflow-hidden hidden sm:block">
+        <div className="animate-marquee whitespace-nowrap flex items-center">
+          {/* Registered Users */}
+          <div
+            className="flex items-center text-white font-normal text-[5vw] sm:text-[2.5vw] mx-[3vw]"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <div className="border border-white rounded-full p-[2vw] sm:p-[1vw] flex items-center justify-center mr-[1vw] w-[10vw] h-[10vw] sm:w-[5vw] sm:h-[5vw]">
+              <LuUsersRound size="5vw" sm:size="2.5vw" color="white" />
             </div>
-            4677+ Registered Users
-          </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <FaMars size={20} />
-            </div>
-            2935+ Mens
-          </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <FaVenus size={20} />
-            </div>
-            1742+ Womens
-          </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <FaHeart size={20} />
-            </div>
-            547+ Couples Paired
-          </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <RiUserHeartFill size={20} />
-            </div>
-            2000+ Weddings
-          </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <MdVerified size={20} />
-            </div>
-            Genuine Profiles
+            <span className="text-[6vw] sm:text-[3vw] mr-1">
+              4677<span className="-mt-[1vw] sm:-mt-[0.5vw]">+</span>
+            </span>
+            <span className="text-[5vw] sm:text-[2.5vw]">Registered Users</span>
           </div>
 
-          {/* Duplicate for continuous scroll */}
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2"></div>
-            4677+ Registered Users
-          </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <FaMars size={20} />
+          {/* Mens */}
+          <div
+            className="flex items-center text-white font-normal text-[5vw] sm:text-[2.5vw] mx-[3vw]"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <div className="border border-white rounded-full p-[2vw] sm:p-[1vw] flex items-center justify-center mr-[1vw] w-[10vw] h-[10vw] sm:w-[5vw] sm:h-[5vw]">
+              <LuUsersRound size="5vw" sm:size="2.5vw" color="white" />
             </div>
-            2935+ Mens
+            <span className="text-[6vw] sm:text-[3vw] mr-1">
+              2935<span className="-mt-[1vw] sm:-mt-[0.5vw]">+</span>
+            </span>
+            <span className="text-[5vw] sm:text-[2.5vw]">Mens</span>
           </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <FaVenus size={20} />
+
+          {/* Womens */}
+          <div
+            className="flex items-center text-white font-normal text-[5vw] sm:text-[2.5vw] mx-[3vw]"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <div className="border border-white rounded-full p-[2vw] sm:p-[1vw] flex items-center justify-center mr-[1vw] w-[10vw] h-[10vw] sm:w-[5vw] sm:h-[5vw]">
+              <LuUsersRound size="5vw" sm:size="2.5vw" color="white" />
             </div>
-            1742+ Womens
+            <span className="text-[6vw] sm:text-[3vw] mr-1">
+              1742<span className="-mt-[1vw] sm:-mt-[0.5vw]">+</span>
+            </span>
+            <span className="text-[5vw] sm:text-[2.5vw]">Womens</span>
           </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <FaHeart size={20} />
+
+          {/* Couples Paired */}
+          <div
+            className="flex items-center text-white font-normal text-[5vw] sm:text-[2.5vw] mx-[3vw]"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <div className="border border-white rounded-full p-[2vw] sm:p-[1vw] flex items-center justify-center mr-[1vw] w-[10vw] h-[10vw] sm:w-[5vw] sm:h-[5vw]">
+              <LuUsersRound size="5vw" sm:size="2.5vw" color="white" />
             </div>
-            547+ Couples Paired
+            <span className="text-[6vw] sm:text-[3vw] mr-1">
+              547<span className="-mt-[1vw] sm:-mt-[0.5vw]">+</span>
+            </span>
+            <span className="text-[5vw] sm:text-[2.5vw]">Couples Paired</span>
           </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <RiUserHeartFill size={20} />
+
+          {/* Weddings */}
+          <div
+            className="flex items-center text-white font-normal text-[5vw] sm:text-[2.5vw] mx-[3vw]"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <div className="border border-white rounded-full p-[2vw] sm:p-[1vw] flex items-center justify-center mr-[1vw] w-[10vw] h-[10vw] sm:w-[5vw] sm:h-[5vw]">
+              <LuUsersRound size="5vw" sm:size="2.5vw" color="white" />
             </div>
-            2000+ Weddings
+            <span className="text-[6vw] sm:text-[4vw] mr-1">
+              2000<span className="-mt-[1vw] sm:-mt-[0.5vw]">+</span>
+            </span>
+            <span className="text-[5vw] sm:text-[2.5vw]">Weddings</span>
           </div>
-          <div className="text-white font-semibold text-lg flex items-center mx-6">
-            <div className="border border-white rounded-full p-1 mr-2">
-              <MdVerified size={20} />
+
+          {/* Genuine Profiles */}
+          <div
+            className="flex items-center text-white font-normal text-[5vw] sm:text-[2vw] mx-[3vw]"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <div className="border border-white rounded-full p-[2vw] sm:p-[1vw] flex items-center justify-center mr-[1vw] w-[10vw] h-[10vw] sm:w-[5vw] sm:h-[5vw]">
+              <LuUsersRound size="5vw" sm:size="2.5vw" className="text-white" />
             </div>
-            Genuine Profiles
+            <span className="text-[5vw] sm:text-[2.5vw]">Genuine Profiles</span>
           </div>
         </div>
       </div>
 
-      {/* Main Section */}
-      <div className="my-[4.167vw] grid grid-cols-1 sm:grid-cols-2 gap-6 px-6 ">
-        {/* Left Column */}
-        <div className=" flex flex-col justify-between">
-          {/* Left: Text Content */}
-          <div>
-            <p className="text-sm text-red-500 font-semibold mt-[3.438vw] grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              SHADI MUHARATH
-            </p>
-            <h1 className="mt-[1.25vw] w-3/4 text-3xl md:text-5xl font-bold leading-tight">
-              Together We Stand,
-              <br />
-              Hand In Hand.
-            </h1>
-            <p className="text-gray-600 mt-4 w-5/6">
-              It is a long established fact that a reader will be distracted by
-              the <br /> readable content of a page when looking at its layout.
-            </p>
-            <button className="mt-6 px-6 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition">
-              Register Now
-            </button>
-          </div>
+      {/* Grid Layout */}
+      <div className="grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-4 px-4 sm:px-10 py-6 sm:py-10">
+        {/* Main Banner Text Block */}
+        <div className="col-span-2 sm:col-span-3 sm:row-span-4 bg-[#FFF4EE] sm:bg-white m-2 rounded-lg transition-shadow duration-300 ease-in-out flex flex-col justify-start items-center sm:items-start">
+          <p className="text-[3vw] sm:text-[1vw] text-[#ED1C24] hidden sm:block font-semibold mt-[3.438vw]">
+            SHADI MUHARATH
+          </p>
+          <h1
+            className="text-[8vw] sm:text-[3.7vw] font-medium mb-0 text-center sm:text-left"
+            style={{ fontFamily: "Raleway" }}
+          >
+            Together We Stand,
+          </h1>
+          <h2
+            className="text-[8vw] sm:text-[3.7vw] -mt-[2vw] sm:-mt-[1vw] font-medium text-center sm:text-left"
+            style={{ fontFamily: "Raleway" }}
+          >
+            Hand In Hand.
+          </h2>
+          <p className="text-[3.5vw] sm:text-[1vw] text-center sm:text-start text-gray-500 mt-[2vw] sm:mt-[1vw] w-[80vw] sm:w-[30vw]">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          </p>
+          <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] px-[10vw] sm:px-[1.6vw] rounded-[8vw] sm:rounded-[2vw] py-[2vw] sm:py-[0.6vw] text-white text-[4vw] sm:text-[1vw] mt-[4vw] sm:mt-[3vw]">
+            Register Now
+          </button>
+        </div>
 
-          {/* Stats Grid */}
-          <div className="mt-[7.396vw] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 items-end">
-            {/* Card 1 */}
-            <div className="border border-red-200 rounded-xl text-center p-6">
-              {/* <div className="text-[3.333vw] text-red-500 font-semibold"style={{ fontFamily: "Raleway, serif" }}
-              >
-              <LuUsersRound size={20} />
-                4677<span className="text-red-400">+</span>
-              </div> */}
-              <div
-                className="text-[3.333vw] font-bold bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent"
-                style={{ fontFamily: "Raleway, serif" }}
-              >
-                4677<span className="text-transparent">+</span>
-              </div>
-              <div className="mt-2 text-gray-700">Registered Users</div>
-            </div>
-            {/* Card 2 */}
-            <div className="border border-red-200 rounded-xl text-center p-6">
-              <div
-                className="text-[3.333vw] text-red-500 font-bold"
-                style={{ fontFamily: "Raleway, serif" }}
-              >
-                2935<span className="text-red-400">+</span>
-              </div>
-              <div className="mt-2 text-gray-700">Mens</div>
-            </div>
-            {/* Card 3 */}
-            <div className="border border-red-200 rounded-xl text-center p-6">
-              <div
-                className="text-[3.333vw] text-red-500 font-bold"
-                style={{ fontFamily: "Raleway, serif" }}
-              >
-                1742<span className="text-red-400">+</span>
-              </div>
-              <div className="mt-2 text-gray-700">Womens</div>
-            </div>
-            {/* Card 4 */}
-            <div className="border border-red-200 rounded-xl text-center p-6">
-              <div
-                className="text-[3.333vw] text-red-500 font-bold"
-                style={{ fontFamily: "Raleway, serif" }}
-              >
-                547<span className="text-red-400">+</span>
-              </div>
-              <div className="mt-2 text-gray-700">Couples Paired</div>
-            </div>
+        {/* Grid Images - Hidden on mobile */}
+        <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg w-1/2 sm:w-full">
+          <img src={bow} alt="bow" className="w-full h-full object-cover" />
+        </div>
+        <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg w-1/2 sm:w-full">
+          <img src={pink} alt="pink" className="w-full h-full object-cover" />
+        </div>
+        <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg">
+          <img src={heart} alt="heart" className="w-full h-full object-cover" />
+        </div>
+        <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg">
+          <img src={muff} alt="muff" className="w-full h-full object-cover" />
+        </div>
+        <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg">
+          <img src={church} alt="church" className="w-full h-full object-cover" />
+        </div>
+        <div className="col-span-1 sm:col-span-1 row-span-2 bg-white m-2 hidden sm:block rounded-lg">
+          <img src={christ} alt="christ" className="w-full h-full object-cover" />
+        </div>
+
+        {/* Info Card - Registered Users */}
+        <div className="col-span-1 sm:col-span-1 row-span-1 sm:row-span-2 bg-[#FFF4EE] m-2 rounded-2xl flex flex-col justify-start px-3 py-4 h-[28vw] lg:h-[12.8vw] border border-[rgba(237,28,36,0.15)] sm:bg-white">
+          <img
+            src={User}
+            alt="Registered Users"
+            className="w-[8vw] sm:w-[3.333vw] h-[8vw] sm:h-[3.333vw] mb-1"
+          />
+          <div
+            className="text-[5vw] sm:text-[3.2vw] flex font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent"
+            style={{ fontFamily: "Raleway" }}
+          >
+            4677<span className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight" style={{ fontFamily: "Raleway" }}>+</span>
+          </div>
+          <div
+            className="text-[3vw] sm:text-[1.2vw] text-black font-medium mt-1"
+            style={{ fontFamily: "Raleway" }}
+          >
+            Registered Users
           </div>
         </div>
 
-        {/* Right Column - Grid without map */}
-        <div className="grid grid-cols-3 gap-4">
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img src={bow} alt="bow" className="w-full h-full object-cover" />
+        {/* Info Card - Mens */}
+        <div className="col-span-1 sm:col-span-1 row-span-1 sm:row-span-2 bg-[#FFF4EE] m-2 rounded-2xl flex flex-col justify-start px-3 py-4 h-[28vw] lg:h-[12.8vw] border border-[rgba(237,28,36,0.15)] sm:bg-white">
+          <img
+            src={Male}
+            alt="Mens"
+            className="w-[8vw] sm:w-[3.333vw] h-[8vw] sm:h-[3.333vw] mb-1"
+          />
+          <div
+            className="text-[5vw] sm:text-[3.5vw] flex font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent"
+            style={{ fontFamily: "Raleway" }}
+          >
+            2935<span className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight" style={{ fontFamily: "Raleway" }}>+</span>
           </div>
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img src={pink} alt="pink" className="w-full h-full object-cover" />
+          <div
+            className="text-[3.5vw] sm:text-[1vw] text-black font-medium mt-1"
+            style={{ fontFamily: "Raleway" }}
+          >
+            Mens
           </div>
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img
-              src={heart}
-              alt="heart"
-              className="w-full h-full object-cover"
-            />
+        </div>
+
+        {/* Info Card - Womens */}
+        <div className="col-span-1 sm:col-span-1 row-span-1 sm:row-span-2 bg-[#FFF4EE] m-2 rounded-2xl flex flex-col justify-start px-3 py-4 h-[28vw] lg:h-[12.8vw] border border-[rgba(237,28,36,0.15)] sm:bg-white">
+          <img
+            src={Pair}
+            alt="Womens"
+            className="w-[6vw] sm:w-[3.3vw] h-[6vw] sm:h-[3.3vw] mb-1"
+          />
+          <div
+            className="text-[5vw] sm:text-[3.5vw] flex font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent"
+            style={{ fontFamily: "Raleway" }}
+          >
+            1742<span className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight" style={{ fontFamily: "Raleway" }}>+</span>
           </div>
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img
-              src={muff}
-              alt="muffler"
-              className="w-full h-full object-cover"
-            />
+          <div
+            className="text-[3.5vw] sm:text-[1vw] text-black font-medium mt-1"
+            style={{ fontFamily: "Raleway" }}
+          >
+            Womens
           </div>
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img
-              src={church}
-              alt="church"
-              className="w-full h-full object-cover"
-            />
+        </div>
+
+        {/* Info Card - Couples Paired */}
+        <div className="col-span-1 sm:col-span-1 row-span-1 sm:row-span-2 bg-[#FFF4EE] m-2 rounded-2xl px-3 py-4 h-[28vw] lg:h-[12.8vw] border border-[rgba(237,28,36,0.15)] sm:bg-white">
+          <img
+            src={Coup}
+            alt="Couples Paired"
+            className="w-[6vw] sm:w-[3.3vw] h-[6vw] sm:h-[3.3vw] mb-1"
+          />
+          <div
+            className="text-[5vw] sm:text-[3.833vw] flex font-medium bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text text-transparent"
+            style={{ fontFamily: "Raleway" }}
+          >
+            547<span className="-mt-[1vw] sm:-mt-[0.2vw] font-extralight" style={{ fontFamily: "Raleway" }}>+</span>
           </div>
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img
-              src={christ}
-              alt="christ"
-              className="w-full h-full object-cover"
-            />
+          <div
+            className="text-[3.5vw] sm:text-[1.2vw] text-black"
+            style={{ fontFamily: "Raleway" }}
+          >
+            Couples Paired
           </div>
-          <div className="bg-white rounded-md overflow-hidden">
-            <img
-              src={Profile}
-              alt="profile"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img
-              src={Korean}
-              alt="korean"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="bg-pink-50 rounded-md overflow-hidden">
-            <img
-              src={Hands}
-              alt="hands"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        </div>
+
+        {/* Info Card - Weddings (Desktop Only) */}
+        
+
+        {/* Info Card - Genuine Profiles (Desktop Only) */}
+        
+
+        {/* Info Card - Korean (Desktop Only) */}
+        <div className="bg-white m-2 hidden sm:block rounded-lg">
+          <img src={Korean} alt="Korean" className="w-full h-full object-cover" />
+        </div>
+
+        {/* Last Visual Block */}
+        <div className="bg-white m-2 rounded-lg hidden sm:block">
+          <img src={Hands} alt="Hands" className="w-full h-full object-cover" />
         </div>
       </div>
     </div>

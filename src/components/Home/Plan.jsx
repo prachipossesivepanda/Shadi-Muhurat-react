@@ -37,6 +37,7 @@ const Pricing = () => {
       ],
       buttonText: "Get Started Now",
       bgGradient: "from-[#F05A8E] to-[#ED1C24]",
+      
       isHighlighted: false,
     },
     {

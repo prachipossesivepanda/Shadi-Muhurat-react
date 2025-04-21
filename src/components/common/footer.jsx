@@ -16,7 +16,8 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between w-full gap-10">
         {/* Left */}
         <div className="md:w-1/2 space-y-6 flex md:flex-col flex-col-reverse">
-          <div className="text-[40px] md:text-[50px] font-medium font-Raleway leading-tight text-center md:text-left mb-4  mt-6 md:mb-0">
+          <div className="text-[40px] md:text-[50px] font-medium  leading-tight text-center md:text-left mb-4  mt-6 md:mb-0" 
+          style={{fontFamily:"Raleway"}}>
             Are You In For <br /> The Gossips?
           </div>
 
@@ -33,13 +34,13 @@ const Footer = () => {
         {/* Right */}
         <div className="md:w-1/2 space-y-6">
           {/* Email + Button */}
-          <div className="flex flex-col md:flex-row md:items-center gap-4 w-full">
+          <div className="flex flex-col md:flex-row md:items-center gap-0 w-full">
             <input
               type="email"
               placeholder="enter Your email address"
-              className="border-b border-gray-400 py-2 w-full md:w-2/3 focus:outline-none"
+              className="border-b border-gray-400 py-2 w-full md:w-full focus:outline-none"
             />
-            <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] text-white px-6 py-2 rounded-full whitespace-nowrap">
+            <button className="bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]  text-white px-6 py-2 rounded-full whitespace-nowrap">
               Register Now
             </button>
           </div>

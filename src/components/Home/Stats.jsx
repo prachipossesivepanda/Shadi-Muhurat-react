@@ -52,18 +52,18 @@ const Stats = () => {
             className="relative group bg-white shadow-lg rounded-2xl md:overflow-hidden max-sm:overflow-visible"
           >
             {/* Arrow Icon */}
-            <div className="absolute opacity-0 -translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 group-hover:top-2 right-2 bg-white p-3 rounded-full shadow-md transition-all duration-300">
+            <div className="absolute opacity-0 -translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 group-hover:top-2 right-2 bg-white p-2 rounded-full shadow-md transition-all duration-300">
               <ChevronRight className="h-8 w-8 text-[#ED1C24]" />
             </div>
             {/* Image */}
             <img
               src={service.imgSrc}
               alt={service.title}
-              className="w-full   md:h-[27.8vw] max-sm:h-[60vw] object-cover"
+              className="w-full max-sm:w-[60vw]  md:h-[27.8vw] max-sm:h-[60vw] object-cover"
             />
 
             {/* Hover Content */}
-            <div className="absolute md:bottom-5 md:left-5 max-sm:bottom-[-20vw] max-sm:left-7 md:w-[18vw] max-sm:w-[70vw] bg-[#F9E9E1] md:p-[0.5vw] max-sm:p-[3vw] rounded-2xl md:h-24 max-sm:h-[45vw] md:group-hover:h-48 md:overflow-hidden overflow-visible flex flex-col justify-items-start items-start md:transition-all md:duration-500 md:ease-in-out">
+            <div className="absolute md:bottom-5 md:left-[1.25vw] md:right-[1.25vw] max-sm:bottom-[-20vw] max-sm:left-2 md:w-auto max-sm:w-[65vw] bg-[#F9E9E1]  md:p-[0.833vw] max-sm:p-[2vw] rounded-2xl md:h-[5.115vw] max-sm:h-[45vw] md:group-hover:h-48 md:overflow-hidden overflow-visible flex flex-col justify-items-start items-start md:transition-all md:duration-500 md:ease-in-out">
               {/* Title */}
               <p className="bg-gradient-to-r ml-[0.5vw] from-[#ED1C24] to-[#F05A8E] font-semibold bg-clip-text text-transparent md:text-[1.3vw] max-sm:text-[4vw]">
                 {service.title}

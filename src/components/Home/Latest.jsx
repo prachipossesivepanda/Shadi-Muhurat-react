@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
 import Goa from "../../assets/images/Goa.svg";
 import Night from "../../assets/images/Night.svg";
 import Black from "../../assets/images/Black.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Latest() {
   // Blog posts data
@@ -9,27 +10,31 @@ export default function Latest() {
     {
       id: 1,
       image: Goa,
-      date: "APRIL 15, 2024",
-      title: "Vestibulum Id Dui Consectetur Ultrices.",
-      description: "Vestibulum id dui consectetur, elementum nisi posuere lorem ipsum sit amet placet.",
-      link: "#"
+      date: "Aug 12, 2024",
+      title: "Vestibulum Id Dui Consectetur Ullarices.",
+      description:
+        "Vestibulum id dui consectetur, ullamcorper nec porttitor est sit amet porta ultrices.",
+      link: "#",
     },
     {
       id: 2,
       image: Night,
-      date: "MAY 10, 2024",
-      title: "Vestibulum Id Dui Consectetur Ultrices.",
-      description: "Vestibulum id dui consectetur, elementum nisi posuere vestibulum etiam odio amet placet.",
-      link: "#"
+      date: "Aug 12, 2024",
+      title: "Vestibulum Id Dui Consectetur Ullarices.",
+      description:
+        "Vestibulum id dui consectetur, ullamcorper nec porttitor est sit amet porta ultrices.",
+
+      link: "#",
     },
     {
       id: 3,
       image: Black,
-      date: "JUNE 12, 2024",
+      date: "Aug 12, 2024",
       title: "Vestibulum Id Dui Consectetur Ultrices.",
-      description: "Vestibulum id dui consectetur, elementum nisi posuere vestibulum placet etiam.",
-      link: "#"
-    }
+      description:
+        "Vestibulum id dui consectetur, ullamcorper nec porttitor est sit amet porta ultrices.",
+      link: "#",
+    },
   ];
 
   // Render blog cards without map
@@ -39,25 +44,37 @@ export default function Latest() {
     for (let i = 0; i < blogPosts.length; i++) {
       const post = blogPosts[i];
       items.push(
-        <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md">
+        <div
+          key={post.id}
+          className={`bg-white rounded-[3vw] lg:rounded-[1vw] overflow-hidden shadow-md
+          ${i > 0 ? "hidden md:block" : "block"}`}
+        >
           <div className="relative">
-            <img 
-              src={post.image} 
+            <img
+              src={post.image}
               alt={post.title}
-              className="w-full h-48 object-cover rounded-t-lg"
+              className="w-full h-auto object-cover "
             />
-            <div className="absolute bottom-3 left-3 bg-black rounded-full px-3 py-1 text-xs font-medium text-white">
+            <div className="absolute bottom-4 left-4 bg-[#000000]  opacity-[75%] rounded-full  px-3 py-1 md:px-3 md:py-1  text-[3vw] md:text-[0.8vw] font-medium text-white">
               {post.date}
             </div>
           </div>
-          <div className="p-4">
-            <h3 className="font-medium text-lg mb-2">{post.title}</h3>
-            <p className="text-gray-600 text-sm mb-3">{post.description}</p>
-            <a 
-              href={post.link} 
-              className="text-red-400 text-sm font-medium hover:text- transition-colors duration-200"
+          <div className="pl-7 md:py-[1.5vw] py-[5vw] flex flex-col   gap-[4vw] md:gap-[0.5vw] ">
+            <h3
+              className="font-medium  text-[5vw] md:text-[1.2vw] "
+              style={{ fontFamily: "Raleway" }}
             >
-              READ MORE
+              {post.title}
+            </h3>
+            <p className="text-gray-600  md:text-[0.8vw] text-[4.5vw] lg:text-[0.9vw]  md:w-[23vw] ">
+              {post.description}
+            </p>
+            <a
+              href={post.link}
+              className="relative font-medium text-transparent bg-gradient-to-r from-[#F05A8E] to-[#ED1C24] bg-clip-text  text-[3vw] md:text-[1vw] hover:opacity-80 transition-opacity duration-200 underline-offset-2"
+            >
+              Read More
+              <span className="absolute left-0 bottom-0  w-[14.5vw] md:w-[4.9vw] h-[1.5px] bg-gradient-to-r from-[#F05A8E] to-[#ED1C24]"></span>
             </a>
           </div>
         </div>
@@ -68,11 +85,25 @@ export default function Latest() {
   };
 
   return (
-    <div className="bg-amber-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-Raleway font-medium mb-8 text-left">Latest News & Blog</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="  ">
+      <div className="flex  flex-col gap-[2vw] items-start mx-[4vw]">
+        <div className=" flex  flex-col   md:flex-row items-center justify-between w-full">
+          <h2 className=" md:text-[3.5vw] text-[9vw] lg:text-[3.5vw] font-Raleway font-normal  ">
+            Latest News & Blog
+          </h2>
+          <div className="block md:hidden ml-[70vw]">
+            <button
+              onClick={() => alert("You tapped the arrow!")} // replace with your action
+    
+              className="w-[8vw] h-[8vw]  mt-3  mb-2 flex items-center justify-center bg-[#ED1C24]/[0.15]
+              rounded-full"
+            >
+              <i className="fa-solid fa-arrow-right text-[#C1645C]   text-[4vw]"></i>
+            </button>
+          </div>
+        </div>
+
+        <div className="flex flex-row items-center justify-center gap-6">
           {renderBlogPosts()}
         </div>
       </div>
